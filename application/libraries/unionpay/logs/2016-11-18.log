@@ -1,0 +1,491 @@
+2016-11-18 9:48:00, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:48:00, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118094800&txnType=01&version=5.0.0 
+2016-11-18 9:48:00, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >030f6b107b6f36e5a94328aa217374d199765734 
+2016-11-18 9:48:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:48:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118094809&txnType=01&version=5.0.0 
+2016-11-18 9:48:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >00db909f3c798d57bd4a05820de3c882b00d6e02 
+2016-11-18 9:48:47, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:48:47, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118094847&txnType=01&version=5.0.0 
+2016-11-18 9:48:47, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >2e65325b7c75fb66a6b50b0449b8e1b072349c3f 
+2016-11-18 9:52:12, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:52:12, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095212&txnType=01&version=5.0.0 
+2016-11-18 9:52:12, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >269b88548aec347038ff076e0b38072713b298bf 
+2016-11-18 9:52:19, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:52:19, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095219&txnType=01&version=5.0.0 
+2016-11-18 9:52:19, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >3a0d4ae1d4f21965559349f6b464af0a68a9ea99 
+2016-11-18 9:53:20, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:53:20, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095320&txnType=01&version=5.0.0 
+2016-11-18 9:53:20, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >af8329afc377edba81d4656e33f54f876f1cb7db 
+2016-11-18 9:55:50, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:55:50, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095550&txnType=01&version=5.0.0 
+2016-11-18 9:55:50, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >940ae3852618d1c8a7cde6e072fcdfcec80d5372 
+2016-11-18 9:55:58, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:55:58, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095558&txnType=01&version=5.0.0 
+2016-11-18 9:55:58, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >37030c8214a376c1c88948ba977a9ae929fd1d98 
+2016-11-18 9:56:03, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:56:03, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095603&txnType=01&version=5.0.0 
+2016-11-18 9:56:03, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >882be22365f85415b77470c4e311e56466e7c1b7 
+2016-11-18 9:56:22, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:56:22, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095622&txnType=01&version=5.0.0 
+2016-11-18 9:56:22, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >b98fc6cbbc0cf3f28cf507f1174ac5edc2b73636 
+2016-11-18 9:56:30, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:56:30, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095630&txnType=01&version=5.0.0 
+2016-11-18 9:56:30, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >6aed08110bf3223ee29204311399eb60a4e4f6d5 
+2016-11-18 9:57:23, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:57:23, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095723&txnType=01&version=5.0.0 
+2016-11-18 9:57:23, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >d9868eaa54c00cb2b3409d07732dab6ca316730b 
+2016-11-18 9:57:55, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:57:55, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095755&txnType=01&version=5.0.0 
+2016-11-18 9:57:55, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >a6aee4477d219c3b90fb2299fbbcde252f2585fb 
+2016-11-18 9:57:58, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:57:58, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095758&txnType=01&version=5.0.0 
+2016-11-18 9:57:58, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >109de4596e29d5ee2996086f55147dfdf2e93246 
+2016-11-18 9:58:04, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:58:04, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095804&txnType=01&version=5.0.0 
+2016-11-18 9:58:04, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >d4ebbcf887db2a92206785629a05ef1e58bdebf0 
+2016-11-18 9:58:25, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:58:25, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095825&txnType=01&version=5.0.0 
+2016-11-18 9:58:25, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >75d133a9c6c9bcaf8d8df2c9c53dc25f5a36b51a 
+2016-11-18 9:58:34, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:58:34, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095834&txnType=01&version=5.0.0 
+2016-11-18 9:58:34, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >958d3ed52bab18189165b3e81fc804a533b29b8e 
+2016-11-18 9:59:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 9:59:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118095909&txnType=01&version=5.0.0 
+2016-11-18 9:59:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >39c009a276270be679830ab09821a5e9622f9215 
+2016-11-18 11:39:38, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:39:38, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118113938&txnType=01&version=5.0.0 
+2016-11-18 11:39:38, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >8fb79afe5e983a3e7d85d27e6764330d9a1800fd 
+2016-11-18 11:40:40, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:40:40, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114040&txnType=01&version=5.0.0 
+2016-11-18 11:40:40, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >48599efc80d4e4b92fe943a3275ed6d80ddb459e 
+2016-11-18 11:40:55, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:40:55, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114055&txnType=01&version=5.0.0 
+2016-11-18 11:40:55, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >84a41646ecac4833e1a18c4d6ae76850520eccc5 
+2016-11-18 11:41:01, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:41:01, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114101&txnType=01&version=5.0.0 
+2016-11-18 11:41:01, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >b47b1ec0465cef52f5fa206ef812da82a78f59f7 
+2016-11-18 11:41:04, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:41:04, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114104&txnType=01&version=5.0.0 
+2016-11-18 11:41:04, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >bd0119f87c06728a9a4dd3967be25126b37d70bd 
+2016-11-18 11:41:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:41:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114109&txnType=01&version=5.0.0 
+2016-11-18 11:41:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >34327cb52411da44c072e538dd8b2d7771ee590d 
+2016-11-18 11:41:11, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:41:11, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114111&txnType=01&version=5.0.0 
+2016-11-18 11:41:11, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >35d3e676ad24d4f79961fbb8d4f3bcc87f9b0292 
+2016-11-18 11:44:34, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:44:34, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114434&txnType=01&version=5.0.0 
+2016-11-18 11:44:34, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >aed84c4df618ace4bbbceae16265847b11a49b50 
+2016-11-18 11:44:37, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:44:37, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114437&txnType=01&version=5.0.0 
+2016-11-18 11:44:37, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >09aef6cb2a9c47ef34fadffccb6b6d2c3b0e6e0d 
+2016-11-18 11:44:44, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:44:44, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114444&txnType=01&version=5.0.0 
+2016-11-18 11:44:44, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >934b639742aee316d7d7790ce5f2fa5a3247c915 
+2016-11-18 11:45:15, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:45:15, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114515&txnType=01&version=5.0.0 
+2016-11-18 11:45:15, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >0545df1955413b50f25d0f94e436016176c949d2 
+2016-11-18 11:46:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:46:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114614&txnType=01&version=5.0.0 
+2016-11-18 11:46:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >a452b8794e937039631eb425c918f6848ecb69e7 
+2016-11-18 11:46:17, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:46:17, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114617&txnType=01&version=5.0.0 
+2016-11-18 11:46:17, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >a1dae331b473bad639ee6d97d93f9be19390fd94 
+2016-11-18 11:46:24, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:46:24, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114624&txnType=01&version=5.0.0 
+2016-11-18 11:46:24, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >93f4ec3a4db4da409964c7a783de26a4a038c30a 
+2016-11-18 11:46:56, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:46:56, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114656&txnType=01&version=5.0.0 
+2016-11-18 11:46:56, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >c849632e726040f4f5ed680c4f2efa6529182fc9 
+2016-11-18 11:47:16, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:47:16, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114716&txnType=01&version=5.0.0 
+2016-11-18 11:47:16, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >cef80b98bc372464a407c61af8dcc9a2f57e96d4 
+2016-11-18 11:48:17, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:48:17, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114817&txnType=01&version=5.0.0 
+2016-11-18 11:48:17, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >df55f385c7165ed9932e371804f24cdfb5b2ed9c 
+2016-11-18 11:49:40, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:49:40, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114940&txnType=01&version=5.0.0 
+2016-11-18 11:49:40, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >72cad131365cf0f63c7bc659adb7bafe9eac6e82 
+2016-11-18 11:49:43, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:49:43, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114943&txnType=01&version=5.0.0 
+2016-11-18 11:49:43, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >6dea3f6e8f195bc9404c60be4c5fea9e74aa4d7d 
+2016-11-18 11:49:48, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:49:48, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/Pay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/Pay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118114948&txnType=01&version=5.0.0 
+2016-11-18 11:49:48, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >2aba004439d2cff8e87cf514adaffc1ac8b78cf8 
+2016-11-18 11:54:31, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:54:31, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118115431&txnType=01&version=5.0.0 
+2016-11-18 11:54:31, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >dd44660bd1c43bdfcc84d77bbaf9dd05b84d2ea2 
+2016-11-18 11:55:57, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:55:57, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118115557&txnType=01&version=5.0.0 
+2016-11-18 11:55:57, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >1d70442194cbb1def217332b8debfd0a19d4bc85 
+2016-11-18 11:55:59, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:55:59, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118115559&txnType=01&version=5.0.0 
+2016-11-18 11:55:59, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >2b00634e5cc0b6cb55fca1445b01dcb0cb82ddc1 
+2016-11-18 11:56:06, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[15]------ =====签名报文开始====== 
+2016-11-18 11:56:06, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[21]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118115606&txnType=01&version=5.0.0 
+2016-11-18 11:56:06, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[24]------ 摘要sha1x16 >09ff42c2a6af69faf5a9c7b7e9cdf5defc028464 
+2016-11-18 11:56:46, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 11:56:53, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 11:56:53, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118115653&txnType=01&version=5.0.0 
+2016-11-18 11:57:04, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 11:57:04, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118115704&txnType=01&version=5.0.0 
+2016-11-18 11:57:18, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 11:57:18, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118115718&txnType=01&version=5.0.0 
+2016-11-18 11:57:18, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >c39fe61f904c679748d22f9fba00cc37c05d4e38 
+2016-11-18 11:57:20, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 11:57:20, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118115720&txnType=01&version=5.0.0 
+2016-11-18 11:57:20, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >8349a39684373185adc6add3f0aa6a0c94790c04 
+2016-11-18 11:57:26, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 11:57:26, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118115726&txnType=01&version=5.0.0 
+2016-11-18 11:57:26, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >0bc49307beb752144c9a12940f3da87aa01d3ce6 
+2016-11-18 12:52:25, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 12:52:25, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118125225&txnType=01&version=5.0.0 
+2016-11-18 12:52:25, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >0d75c508eca3019a0ebddb23fae7e50de72e4455 
+2016-11-18 12:52:29, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 12:52:29, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118125229&txnType=01&version=5.0.0 
+2016-11-18 12:52:29, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >c04821157a56fdb682286ab67bd655c576409386 
+2016-11-18 12:52:35, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 12:52:35, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118125235&txnType=01&version=5.0.0 
+2016-11-18 12:52:35, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >1377a802ddc95ae6c623a0fc13656c1481c7c6d4 
+2016-11-18 12:55:34, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 12:55:34, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118125534&txnType=01&version=5.0.0 
+2016-11-18 12:55:34, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >8a6e488237135c2811990f21677223f95da7ce16 
+2016-11-18 12:55:38, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 12:55:38, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118125538&txnType=01&version=5.0.0 
+2016-11-18 12:55:38, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >3aeeeac1e936b51c68603f06565da6f4686ff674 
+2016-11-18 12:55:48, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 12:55:48, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118125548&txnType=01&version=5.0.0 
+2016-11-18 12:55:48, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >007a2bc2c86d93baa321f56360c9095bf385abf6 
+2016-11-18 13:43:30, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 13:43:30, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118134330&txnType=01&version=5.0.0 
+2016-11-18 13:43:30, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >96e45b4d94587f95fcd6760fac384f888a899c2f 
+2016-11-18 13:48:25, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 13:48:25, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118134825&txnType=01&version=5.0.0 
+2016-11-18 13:48:25, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >65ec6cafa524dbb38c84982b86de4c94cc5d5c55 
+2016-11-18 13:48:25, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[36]------ 签名串为 >NkqS8i6Xfz2B+asVmFnoBWCbdmlNPC9wg82DQAmn+DImlT/y4ITLwNOnRGnn7nXGZCE0/pzZ+Mg0YAzqUU1pt8jJUf+KUjSQQSIFJi8QcpPX8j0/mGUonXc+M5M6R4CflJzuytqFrjDGFzjgihU0ZfYUdNdhQAP7iHEjkz5c1iI= 
+2016-11-18 13:48:25, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[41]------ =====签名报文结束====== 
+2016-11-18 13:48:54, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 13:48:54, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118134854&txnType=01&version=5.0.0 
+2016-11-18 13:48:54, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >0bdfd3f3bea84f0df2bd59d4decedb4f470185bf 
+2016-11-18 13:48:54, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[36]------ 签名串为 >ehloDvA17haabEqT4fvi5RE/JxPBvxgiGtlrgC0B6COE3uxERI7acd+2lDfNQ/LLOb5Ld1pHn0VzDPqVN4Kljt3d0o+8gqdZ9jFRsc/zXgeKTizLTaD5MHvHTdyfPO2YXv3QPbnZ+0GXnxthtdD1ogXeXLJzxA/ZUSYNeKjlDIk= 
+2016-11-18 13:48:54, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[41]------ =====签名报文结束====== 
+2016-11-18 13:49:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 13:49:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118134914&txnType=01&version=5.0.0 
+2016-11-18 13:49:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >0d199ea0cb235b2ef42969715febe4b68568a0d5 
+2016-11-18 13:49:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[36]------ 签名串为 >ezT0tP74bU3OW83b79Bt1XQTmH1dw9hsoz+9rV0kiBurd2f6lRlIUiTWDVgqDrmMyoq1UH+O4HnQS9h+gmFyp3YmMovDDoZN4frQ5/xSSmGt7cTmNgsCjfJo2MbBqrJvC5piAK8j47Yz5ji5BqeMAXbOYWdPzXkqD8hg9fDGRIk= 
+2016-11-18 13:49:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[41]------ =====签名报文结束====== 
+2016-11-18 13:49:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\acp_service.php ], Line[163]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://101.231.204.80:5000/gateway/api/frontTransReq.do" target="_blank" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.saiku.cc/admin/unionpay/returnlink" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.saiku.cc/admin/unionpay/notifylink" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="123" />
+    <input type="hidden" name="orderId" id="orderId" value="2342342304824" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20161118134914" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="1" />
+    <input type="hidden" name="certId" id="certId" value="40220995861346480087409489142384722381" />
+    <input type="hidden" name="signature" id="signature" value="ezT0tP74bU3OW83b79Bt1XQTmH1dw9hsoz+9rV0kiBurd2f6lRlIUiTWDVgqDrmMyoq1UH+O4HnQS9h+gmFyp3YmMovDDoZN4frQ5/xSSmGt7cTmNgsCjfJo2MbBqrJvC5piAK8j47Yz5ji5BqeMAXbOYWdPzXkqD8hg9fDGRIk=" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 
+2016-11-18 13:49:20, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 13:49:20, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118134920&txnType=01&version=5.0.0 
+2016-11-18 13:49:20, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >9a54df94ac927669f771e4f27066e3adf8404fe9 
+2016-11-18 13:49:20, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[36]------ 签名串为 >QhWQuL9xjPGC1HsjjARFrb2yYn7nTx9vwkiKNWHw05mrCGk98msQIMTAa2QAZIX3Vv0Rq2UkaR60EIyHsZzcK7+7exPrEfr22HY4VpJOVFH2r04Qhac/J3dm4d/ULY5CBM13zw+dlzxpTl64Wgzbw1aEEtvpOanpwrPEcZRLLIY= 
+2016-11-18 13:49:20, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[41]------ =====签名报文结束====== 
+2016-11-18 13:49:20, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\acp_service.php ], Line[163]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://101.231.204.80:5000/gateway/api/frontTransReq.do" target="_blank" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.saiku.cc/admin/unionpay/returnlink" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.saiku.cc/admin/unionpay/notifylink" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="123" />
+    <input type="hidden" name="orderId" id="orderId" value="2342342304824" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20161118134920" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="1" />
+    <input type="hidden" name="certId" id="certId" value="40220995861346480087409489142384722381" />
+    <input type="hidden" name="signature" id="signature" value="QhWQuL9xjPGC1HsjjARFrb2yYn7nTx9vwkiKNWHw05mrCGk98msQIMTAa2QAZIX3Vv0Rq2UkaR60EIyHsZzcK7+7exPrEfr22HY4VpJOVFH2r04Qhac/J3dm4d/ULY5CBM13zw+dlzxpTl64Wgzbw1aEEtvpOanpwrPEcZRLLIY=" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 
+2016-11-18 13:49:56, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 13:49:56, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118134956&txnType=01&version=5.0.0 
+2016-11-18 13:49:56, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >d6cc63436789a2aa61b14866755f053b608193f6 
+2016-11-18 13:49:56, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[36]------ 签名串为 >Fc1nhEA7WTZhjO9Dq6j+2LBxPuWsmTdLkPftt5hWUDvxl5IxBXLqglX1c70bX+O/mXbiR9saBvWYsri5Zb/x1DM27vlxXLCjOGHRQuODJ4+PkD0f/slCUBBtqUfwKMbEVCMdkuQO3EWTiIeWf8rP7CTAMVOyf2K2SRTTp/Zf/NQ= 
+2016-11-18 13:49:56, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[41]------ =====签名报文结束====== 
+2016-11-18 13:49:56, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\acp_service.php ], Line[163]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://101.231.204.80:5000/gateway/api/frontTransReq.do" target="_blank" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.saiku.cc/admin/unionpay/returnlink" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.saiku.cc/admin/unionpay/notifylink" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="123" />
+    <input type="hidden" name="orderId" id="orderId" value="2342342304824" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20161118134956" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="1" />
+    <input type="hidden" name="certId" id="certId" value="40220995861346480087409489142384722381" />
+    <input type="hidden" name="signature" id="signature" value="Fc1nhEA7WTZhjO9Dq6j+2LBxPuWsmTdLkPftt5hWUDvxl5IxBXLqglX1c70bX+O/mXbiR9saBvWYsri5Zb/x1DM27vlxXLCjOGHRQuODJ4+PkD0f/slCUBBtqUfwKMbEVCMdkuQO3EWTiIeWf8rP7CTAMVOyf2K2SRTTp/Zf/NQ=" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 
+2016-11-18 14:15:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 14:15:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118141514&txnType=01&version=5.0.0 
+2016-11-18 14:15:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >7c1a84b78723d0f354f16008952c4b4349f1419c 
+2016-11-18 14:15:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[36]------ 签名串为 >Jai083IvixNHcUxYAsuELTtcLyaqkufNV+jsAGjgdeR7zIAzf7f7Fa9eE9JT3p0OEGw5owD3zn0sdlVI+OzryRYOoUQdH8JCIsA/hU56zV69ItdDgZeEfp72roYAEB6zThQ6BWWvq4L71SvlD83exyBIOhbz2m28cyv1MpUPhE4= 
+2016-11-18 14:15:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[41]------ =====签名报文结束====== 
+2016-11-18 14:15:14, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\acp_service.php ], Line[163]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://101.231.204.80:5000/gateway/api/frontTransReq.do" target="_blank" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.saiku.cc/admin/unionpay/returnlink" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.saiku.cc/admin/unionpay/notifylink" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="123" />
+    <input type="hidden" name="orderId" id="orderId" value="2342342304824" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20161118141514" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="1" />
+    <input type="hidden" name="certId" id="certId" value="40220995861346480087409489142384722381" />
+    <input type="hidden" name="signature" id="signature" value="Jai083IvixNHcUxYAsuELTtcLyaqkufNV+jsAGjgdeR7zIAzf7f7Fa9eE9JT3p0OEGw5owD3zn0sdlVI+OzryRYOoUQdH8JCIsA/hU56zV69ItdDgZeEfp72roYAEB6zThQ6BWWvq4L71SvlD83exyBIOhbz2m28cyv1MpUPhE4=" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 
+2016-11-18 14:15:26, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 14:15:26, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=2342342304824&signMethod=01&txnAmt=1&txnSubType=01&txnTime=20161118141526&txnType=01&version=5.0.0 
+2016-11-18 14:15:26, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >e14d6c9a1bfff6cf2ffff421c6b1d73c67f6ec1c 
+2016-11-18 14:15:26, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[36]------ 签名串为 >B4EKFHy1LuqXKRjOib1vpTnwOIyxxVTboz7P4rHHgF18bhm73ovnosAUqjaULYzjpnLTQ/Ih68dys25kZVtrrvrcNNm1zl5a/Smpf5j4FXrBK5tIY3kdTY/iB7SAo8aEk69IwqTesHxVE2iFeIhBkqWkp16cBMQGDXAxchXUVhQ= 
+2016-11-18 14:15:26, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[41]------ =====签名报文结束====== 
+2016-11-18 14:15:26, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\acp_service.php ], Line[163]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://101.231.204.80:5000/gateway/api/frontTransReq.do" target="_blank" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.saiku.cc/admin/unionpay/returnlink" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.saiku.cc/admin/unionpay/notifylink" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="123" />
+    <input type="hidden" name="orderId" id="orderId" value="2342342304824" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20161118141526" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="1" />
+    <input type="hidden" name="certId" id="certId" value="40220995861346480087409489142384722381" />
+    <input type="hidden" name="signature" id="signature" value="B4EKFHy1LuqXKRjOib1vpTnwOIyxxVTboz7P4rHHgF18bhm73ovnosAUqjaULYzjpnLTQ/Ih68dys25kZVtrrvrcNNm1zl5a/Smpf5j4FXrBK5tIY3kdTY/iB7SAo8aEk69IwqTesHxVE2iFeIhBkqWkp16cBMQGDXAxchXUVhQ=" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 
+2016-11-18 14:39:50, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 14:39:50, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=recharge_cuplhf1479450829&signMethod=01&txnAmt=0&txnSubType=01&txnTime=20161118143349&txnType=01&version=5.0.0 
+2016-11-18 14:39:50, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >31e4bb0f7d1349afc6eb5f5df13487d6b3da6f31 
+2016-11-18 14:39:50, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[36]------ 签名串为 >Nk71USAy+gnJAGAswZQ8lIAYPiAf9tbalgo8pO4GBcXafzVa2eaqVzinYEc8YH+Vei7qTHoHmbfhTeFoL0OaCC4lFrBV+ebo8RfbdLtqDDeES22orIh/Tux625osqjJQdGbuMHBfCqneMz0lGjNUxOLSN3EhsWk5u3OlD/K/PAo= 
+2016-11-18 14:39:50, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[41]------ =====签名报文结束====== 
+2016-11-18 14:39:50, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\acp_service.php ], Line[163]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://101.231.204.80:5000/gateway/api/frontTransReq.do" target="_blank" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.saiku.cc/admin/unionpay/returnlink" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.saiku.cc/admin/unionpay/notifylink" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="123" />
+    <input type="hidden" name="orderId" id="orderId" value="recharge_cuplhf1479450829" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20161118143349" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="0" />
+    <input type="hidden" name="certId" id="certId" value="40220995861346480087409489142384722381" />
+    <input type="hidden" name="signature" id="signature" value="Nk71USAy+gnJAGAswZQ8lIAYPiAf9tbalgo8pO4GBcXafzVa2eaqVzinYEc8YH+Vei7qTHoHmbfhTeFoL0OaCC4lFrBV+ebo8RfbdLtqDDeES22orIh/Tux625osqjJQdGbuMHBfCqneMz0lGjNUxOLSN3EhsWk5u3OlD/K/PAo=" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 
+2016-11-18 14:46:24, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 14:46:24, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=recharge_twjkfq1479451584&signMethod=01&txnAmt=123500&txnSubType=01&txnTime=20161118144624&txnType=01&version=5.0.0 
+2016-11-18 14:46:24, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >1f87ce53596bcdb97af9122d1e8feb5c9ac187c0 
+2016-11-18 14:46:24, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[36]------ 签名串为 >jSAKtbDOaao+rDifNq8r+yOU0Q2xq9PEcEvA8a0IXJxBplvmU9xOWY9iF4jrXItFoGK+Zba7m5hYqGUt1u39veaxigR+Z6ThDT4v2NvOZqQDL5RnqDq3URX3KIZ6+uRLnIIPaukG9ULJqnRFne+Q4L1R0KVHROlYlIoCpGZ961g= 
+2016-11-18 14:46:24, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[41]------ =====签名报文结束====== 
+2016-11-18 14:46:24, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\acp_service.php ], Line[163]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://101.231.204.80:5000/gateway/api/frontTransReq.do" target="_blank" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.saiku.cc/admin/unionpay/returnlink" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.saiku.cc/admin/unionpay/notifylink" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="123" />
+    <input type="hidden" name="orderId" id="orderId" value="recharge_twjkfq1479451584" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20161118144624" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="123500" />
+    <input type="hidden" name="certId" id="certId" value="40220995861346480087409489142384722381" />
+    <input type="hidden" name="signature" id="signature" value="jSAKtbDOaao+rDifNq8r+yOU0Q2xq9PEcEvA8a0IXJxBplvmU9xOWY9iF4jrXItFoGK+Zba7m5hYqGUt1u39veaxigR+Z6ThDT4v2NvOZqQDL5RnqDq3URX3KIZ6+uRLnIIPaukG9ULJqnRFne+Q4L1R0KVHROlYlIoCpGZ961g=" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 
+2016-11-18 14:49:02, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 14:49:02, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=recharge_jnxgxj1479451742&signMethod=01&txnAmt=0&txnSubType=01&txnTime=20161118144902&txnType=01&version=5.0.0 
+2016-11-18 14:49:02, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >7bf59a7d5e681b71303286fb1b0c53db54681741 
+2016-11-18 14:49:02, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[36]------ 签名串为 >X6WtH/M/n52Y6IFsKaRatnENHWMhnw6qkRtpAXd1mf/51Ep7WNWd5u/t7kKI42CpeEEAPDk6XWbk+bmCnrURlDsdS3Cer45xq9nP3cbkn91tQa7x1GXTu7mG+6QSv8Qysjkq5kAgykcijWt6aWvBhEy5cYFM/BzhvwZmxifKeRk= 
+2016-11-18 14:49:02, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[41]------ =====签名报文结束====== 
+2016-11-18 14:49:02, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\acp_service.php ], Line[163]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://101.231.204.80:5000/gateway/api/frontTransReq.do" target="_blank" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.saiku.cc/admin/unionpay/returnlink" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.saiku.cc/admin/unionpay/notifylink" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="123" />
+    <input type="hidden" name="orderId" id="orderId" value="recharge_jnxgxj1479451742" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20161118144902" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="0" />
+    <input type="hidden" name="certId" id="certId" value="40220995861346480087409489142384722381" />
+    <input type="hidden" name="signature" id="signature" value="X6WtH/M/n52Y6IFsKaRatnENHWMhnw6qkRtpAXd1mf/51Ep7WNWd5u/t7kKI42CpeEEAPDk6XWbk+bmCnrURlDsdS3Cer45xq9nP3cbkn91tQa7x1GXTu7mG+6QSv8Qysjkq5kAgykcijWt6aWvBhEy5cYFM/BzhvwZmxifKeRk=" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 
+2016-11-18 16:02:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 16:02:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=recharge_kwyldy1479456129&signMethod=01&txnAmt=12300&txnSubType=01&txnTime=20161118160209&txnType=01&version=5.0.0 
+2016-11-18 16:02:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >2f2c6b99e1dc446f18e50ab0b159cb9b58326c74 
+2016-11-18 16:02:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[36]------ 签名串为 >FX3/hHdMg/8+Cde14gDZRoqyTks2J/jyx42aVLnwxI4KbKpf1vecvTeBcj4qd9Z7VGbQjgDTO0zjvbcYnewop+n+NFmt3MSMnF4AXmYYkRGRRQncHUspEvwwMGkIsX0v10KaEY0MvbowQjyrUUZWQAMIBONLgqQjwgZrxgF8Dxg= 
+2016-11-18 16:02:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[41]------ =====签名报文结束====== 
+2016-11-18 16:02:09, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\acp_service.php ], Line[163]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://101.231.204.80:5000/gateway/api/frontTransReq.do" target="_blank" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.saiku.cc/admin/unionpay/returnlink" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.saiku.cc/admin/unionpay/notifylink" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="123" />
+    <input type="hidden" name="orderId" id="orderId" value="recharge_kwyldy1479456129" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20161118160209" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="12300" />
+    <input type="hidden" name="certId" id="certId" value="40220995861346480087409489142384722381" />
+    <input type="hidden" name="signature" id="signature" value="FX3/hHdMg/8+Cde14gDZRoqyTks2J/jyx42aVLnwxI4KbKpf1vecvTeBcj4qd9Z7VGbQjgDTO0zjvbcYnewop+n+NFmt3MSMnF4AXmYYkRGRRQncHUspEvwwMGkIsX0v10KaEY0MvbowQjyrUUZWQAMIBONLgqQjwgZrxgF8Dxg=" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 
+2016-11-18 16:16:43, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[16]------ =====签名报文开始====== 
+2016-11-18 16:16:43, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[22]------ 签名key=val&...串 >accessType=0&backUrl=http://www.saiku.cc/admin/unionpay/notifylink&bizType=000201&certId=40220995861346480087409489142384722381&channelType=08&currencyCode=156&encoding=utf-8&frontUrl=http://www.saiku.cc/admin/unionpay/returnlink&merId=123&orderId=recharge_eazeet1479457003&signMethod=01&txnAmt=12300&txnSubType=01&txnTime=20161118161643&txnType=01&version=5.0.0 
+2016-11-18 16:16:43, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[27]------ 摘要sha1x16 >979fbcf3c501817dd2a74842aa0db0f82a48746c 
+2016-11-18 16:16:43, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[36]------ 签名串为 >XxQ5X626M5Ttzd45YqzsSPhl1Quw5DA8lWGoL5Q106SSCK32l/Z93ZMsoR3othx7FErAR+PQMfMwqXJUjX/eGmO0z+aEZktMsXnA1fDkS7oKGcVktOzADsgbmj+BU9Y/Sk98ZUW1I/JtPY4qlkhgqoSCj2XOiZFlYUFY2ruIJkQ= 
+2016-11-18 16:16:43, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\secureUtil.php ], Line[41]------ =====签名报文结束====== 
+2016-11-18 16:16:43, INFO, 127.0.0.1, File[ D:\svn\application\admin\libraries\unionpay\sdk\acp_service.php ], Line[163]------ 自动跳转html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onload="javascript:document.pay_form.submit();">
+    <form id="pay_form" name="pay_form" action="https://101.231.204.80:5000/gateway/api/frontTransReq.do" target="_blank" method="post">
+	    <input type="hidden" name="version" id="version" value="5.0.0" />
+    <input type="hidden" name="encoding" id="encoding" value="utf-8" />
+    <input type="hidden" name="txnType" id="txnType" value="01" />
+    <input type="hidden" name="txnSubType" id="txnSubType" value="01" />
+    <input type="hidden" name="bizType" id="bizType" value="000201" />
+    <input type="hidden" name="frontUrl" id="frontUrl" value="http://www.saiku.cc/admin/unionpay/returnlink" />
+    <input type="hidden" name="backUrl" id="backUrl" value="http://www.saiku.cc/admin/unionpay/notifylink" />
+    <input type="hidden" name="signMethod" id="signMethod" value="01" />
+    <input type="hidden" name="channelType" id="channelType" value="08" />
+    <input type="hidden" name="accessType" id="accessType" value="0" />
+    <input type="hidden" name="currencyCode" id="currencyCode" value="156" />
+    <input type="hidden" name="merId" id="merId" value="123" />
+    <input type="hidden" name="orderId" id="orderId" value="recharge_eazeet1479457003" />
+    <input type="hidden" name="txnTime" id="txnTime" value="20161118161643" />
+    <input type="hidden" name="txnAmt" id="txnAmt" value="12300" />
+    <input type="hidden" name="certId" id="certId" value="40220995861346480087409489142384722381" />
+    <input type="hidden" name="signature" id="signature" value="XxQ5X626M5Ttzd45YqzsSPhl1Quw5DA8lWGoL5Q106SSCK32l/Z93ZMsoR3othx7FErAR+PQMfMwqXJUjX/eGmO0z+aEZktMsXnA1fDkS7oKGcVktOzADsgbmj+BU9Y/Sk98ZUW1I/JtPY4qlkhgqoSCj2XOiZFlYUFY2ruIJkQ=" />
+   <!-- <input type="submit" type="hidden">-->
+    </form>
+</body>
+</html> 

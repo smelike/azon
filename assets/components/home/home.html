@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/element-ui.css">
+    <link rel="stylesheet/less" type="text/css" href="../../css/components.less">
+    <script src="../../js/less.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="home-notice">
+        <p class="home-notice-text">公告 :</p>
+        <ul class="home-notice-list">
+            <li v-for="item in notice">
+                <a :href="url">
+                    [{{ item.date }}]
+                    <span class="alink">{{item.message}}</span>
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="home-notice-more alink">更多<i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <div class="home-wrapper">
+        <div class="home-wrapper-content">
+            <div class="balance">
+                <p>账户余额 :</p>
+                <span>{{price}}</span>元
+            </div>
+            <div class="operation">
+                <div class="btn-group">
+                    <button type="button" class="btn">充值</button>
+                    <button type="button" class="btn">提现</button>
+                </div>
+                <div class="link-group">
+                    <a href="../shuadan/shuadan.html" class="alink">提现管理</a>&nbsp;|&nbsp;<a href="../shuadan/shuadan.html" class="alink">账单管理</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/vue.js"></script>
+<script src="../../js/vue-resource.js"></script>
+<script src="../../js/element-ui.js"></script>
+
+<script>
+  var Main = {
+    data: function () {
+      return {
+        url: '#',
+        notice: [
+          {
+            date: '3.1',
+            message: '这是一条公告'
+          },
+          {
+            date: '3.2',
+            message: '这是一条公告2'
+          }
+        ],
+        price: '6.32'
+      }
+    },
+    methods: {},
+	created:function() {
+      this.$http.get('/user/wallet_ballance').then(function(response){
+	
+		this.price = response.body.data.balance;
+	
+    },function(response){
+        console.log("请求失败")
+      });
+    },
+
+  };
+  var Ctor = Vue.extend(Main);
+  new Ctor().$mount('#app');
+
+</script>
+
+</body>
+</html>

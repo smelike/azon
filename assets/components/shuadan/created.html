@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">-->
+    <link rel="stylesheet" href="../../css/element-ui.css">
+    <link rel="stylesheet/less" type="text/css" href="../../css/components.less">
+    <script src="../../js/less.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="main-content">
+        <div class="detail-wrapper no-top">
+            <el-row>
+                <el-col :span="24">
+                    <el-form
+                            :model="formData"
+                            ref="formData"
+                            :inline="true"
+                            :rules="rules"
+                            label-width="80px">
+                        <div class="detail-module">
+                            <div class="detail-title">
+                                <h3>产品添加</h3>
+                            </div>
+                            <div class="detail-content">
+                                <el-row>
+                                    <el-col :span="3">
+                                        <div class="images">
+                                            <img :src="formData.img" alt="" class="sm">
+                                        </div>
+                                    </el-col>
+                                    <el-col :span="21">
+                                        <div class="search-module">
+                                            <div class="detail-info">
+                                                <el-col :span="8">
+                                                    <el-form-item label="ASIN:" prop="asin">
+                                                        <el-input v-model="formData.asin" placeholder="ASIN"></el-input>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="平台:">
+                                                        <el-select v-model="formData.pingtai" placeholder="请选择">
+                                                            <el-option label="美国亚马逊" value="1"></el-option>
+                                                            <el-option label="日本亚马逊" value="2"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="店铺:">
+                                                        <el-select v-model="formData.dianpu" placeholder="请选择">
+                                                            <el-option label="A016" value="1"></el-option>
+                                                            <el-option label="A0888" value="2"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="产品品类:">
+                                                        <el-select v-model="formData.pinglei" placeholder="请选择">
+                                                            <el-option label="品类一" value="1"></el-option>
+                                                            <el-option label="品类二" value="2"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="备注:">
+                                                        <el-input v-model="formData.beizhu" placeholder="备注"></el-input>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <!--<el-form-item label="活动时间:">-->
+                                                <!--<el-date-picker type="daterange" placeholder="选择日期范围">-->
+                                                <!--</el-date-picker>-->
+                                                <!--</el-form-item>-->
+                                            </div>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </div>
+                        <div class="detail-module">
+                            <div class="detail-title">
+                                <h3>输入任务信息</h3>
+                            </div>
+                            <div class="detail-content">
+                                <el-row>
+                                    <el-col :span="24">
+                                        <div class="search-module">
+                                            <div class="detail-info">
+                                                <p class="input-title">费用设置</p>
+                                                <el-col :span="8">
+                                                    <el-form-item label="售价:" prop="shoujia">
+                                                        <el-input v-model.number="formData.shoujia"
+                                                                  placeholder="售价"></el-input>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="折扣比例:">
+                                                        <el-select v-model="formData.zhekou" placeholder="请选择">
+                                                            <el-option label="1" value="1"></el-option>
+                                                            <el-option label="0.95" value="0.95"></el-option>
+                                                            <el-option label="0.9" value="0.9"></el-option>
+                                                            <el-option label="0.85" value="0.85"></el-option>
+                                                            <el-option label="0.8" value="0.8"></el-option>
+                                                            <el-option label="0.75" value="0.75"></el-option>
+                                                            <el-option label="0.7" value="0.7"></el-option>
+                                                            <el-option label="0.65" value="0.65"></el-option>
+                                                            <el-option label="0.6" value="0.6"></el-option>
+                                                            <el-option label="0.55" value="0.55"></el-option>
+                                                            <el-option label="0.5" value="0.5"></el-option>
+                                                            <el-option label="0.45" value="0.45"></el-option>
+                                                            <el-option label="0.4" value="0.4"></el-option>
+                                                            <el-option label="0.35" value="0.35"></el-option>
+                                                            <el-option label="0.3" value="0.3"></el-option>
+                                                            <el-option label="0.25" value="0.25"></el-option>
+                                                            <el-option label="0.2" value="0.2"></el-option>
+                                                            <el-option label="0.15" value="0.15"></el-option>
+                                                            <el-option label="0.1" value="0.1"></el-option>
+                                                            <el-option label="0.5" value="0.5"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="折后价:">
+                                                        <el-input v-model="zhehoujia" placeholder="折后价"></el-input>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="运输方式:">
+                                                        <el-select v-model="formData.yunshu" placeholder="请选择">
+                                                            <el-option label="区域一" value="shanghai"></el-option>
+                                                            <el-option label="区域二" value="beijing"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="运费:" prop="yunfei">
+                                                        <el-input v-model.number="formData.yunfei" placeholder="运费"></el-input>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="平台佣金比例:">
+                                                        <el-select v-model="formData.yongjin" placeholder="请选择">
+                                                            <el-option label="区域一" value="shanghai"></el-option>
+                                                            <el-option label="区域二" value="beijing"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <p class="input-title">任务设置</p>
+                                                <el-col :span="8">
+                                                    <el-form-item label="任务类型:">
+                                                        <el-select v-model="formData.leixing" placeholder="请选择">
+                                                            <el-option label="区域一" value="shanghai"></el-option>
+                                                            <el-option label="区域二" value="beijing"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="是否收藏:">
+                                                        <el-select v-model="formData.shoucang" placeholder="请选择">
+                                                            <el-option label="区域一" value="shanghai"></el-option>
+                                                            <el-option label="区域二" value="beijing"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="FEEDBACK:">
+                                                        <el-select v-model="formData.feedback" placeholder="请选择">
+                                                            <el-option label="区域一" value="shanghai"></el-option>
+                                                            <el-option label="区域二" value="beijing"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="优惠券">
+                                                        <el-input v-model="formData.youhuiquan" placeholder="优惠券"
+                                                                  class="input-sm"></el-input>
+                                                    </el-form-item>
+                                                    <el-form-item>
+                                                        <el-input v-model="formData.youhuiquan2" placeholder="备用优惠券"
+                                                                  class="input-sm"></el-input>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="是否关联:">
+                                                        <el-select v-model="formData.guanlian" placeholder="请选择">
+                                                            <el-option label="区域一" value="shanghai"></el-option>
+                                                            <el-option label="区域二" value="beijing"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="关联ASIN:">
+                                                        <el-input v-model="formData.asin2"
+                                                                  placeholder="ASIN"></el-input>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="24">
+                                                    <el-col :span="8">
+                                                        <el-form-item label="上评比例:">
+                                                            <el-select v-model="formData.shangping" placeholder="请选择">
+                                                                <el-option label="区域一" value="shanghai"></el-option>
+                                                                <el-option label="区域二" value="beijing"></el-option>
+                                                            </el-select>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="完成时间:">
+                                                            <el-date-picker v-model="formData.spDate" type="date"
+                                                                            placeholder="选择日期">
+                                                            </el-date-picker>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                </el-col>
+                                                <el-col :span="24">
+                                                    <el-col :span="8">
+                                                        <el-form-item label="FEEDBACK比例:">
+                                                            <el-select v-model="formData.feedbackbili"
+                                                                       placeholder="请选择">
+                                                                <el-option label="区域一" value="shanghai"></el-option>
+                                                                <el-option label="区域二" value="beijing"></el-option>
+                                                            </el-select>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="完成时间:">
+                                                            <el-date-picker v-model="formData.fbDate" type="date"
+                                                                            placeholder="选择日期">
+                                                            </el-date-picker>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                </el-col>
+                                                <el-col :span="8">
+                                                    <el-form-item label="任务周期:">
+                                                        <el-date-picker v-model="formData.date" type="daterange"
+                                                                        @change="dateChange" placeholder="选择日期范围">
+                                                        </el-date-picker>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <div class="rate-list">
+                                                    <el-form-item label="下单频率:">
+                                                        <div class="" width="100%">
+                                                            <div class="x-list" v-for="date in dates">
+                                                                <div class="lf top-align" :class="{ 'week' : date.week==0||date.week==6 }">{{date.date}} :</div>
+                                                                <div class="lf keyword">
+                                                                    <ul>
+                                                                        <li v-for="keyword in date.keywords">
+                                                                            <el-select v-model="keyword.word"
+                                                                                       placeholder="请选择关键词">
+                                                                                <el-option v-for="item in formData.keywords" :label="item" :value="item"></el-option>
+                                                                            </el-select>
+                                                                            <el-input v-model="keyword.num" placeholder="0" class="sm" @focus="onFocus"></el-input>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </el-form-item>
+                                                </div>
+                                                <el-col :span="8">
+                                                    <el-form-item label="是否捆绑:">
+                                                        <el-select v-model="formData.kunbang" placeholder="请选择">
+                                                            <el-option label="是" value="1"></el-option>
+                                                            <el-option label="否" value="0"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                            </div>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </div>
+                        <div v-if="formData.kunbang==1">
+                            <div class="detail-module">
+                                <div class="detail-title">
+                                    <h3>绑定产品信息</h3>
+                                </div>
+                                <div class="detail-content">
+                                    <el-row>
+                                        <el-col :span="3">
+                                            <div class="images">
+                                                <img :src="formData.img" alt="" class="sm">
+                                            </div>
+                                        </el-col>
+                                        <el-col :span="21">
+                                            <div class="search-module">
+                                                <div class="detail-info">
+                                                    <el-col :span="8">
+                                                        <el-form-item label="ASIN:" prop="asin">
+                                                            <el-input v-model="formData.asin" placeholder="ASIN"></el-input>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="平台:">
+                                                            <el-select v-model="formData.pingtai" placeholder="请选择">
+                                                                <el-option label="美国亚马逊" value="1"></el-option>
+                                                                <el-option label="日本亚马逊" value="2"></el-option>
+                                                            </el-select>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="店铺:">
+                                                            <el-select v-model="formData.dianpu" placeholder="请选择">
+                                                                <el-option label="A016" value="1"></el-option>
+                                                                <el-option label="A0888" value="2"></el-option>
+                                                            </el-select>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="产品品类:">
+                                                            <el-select v-model="formData.pinglei" placeholder="请选择">
+                                                                <el-option label="品类一" value="1"></el-option>
+                                                                <el-option label="品类二" value="2"></el-option>
+                                                            </el-select>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="备注:">
+                                                            <el-input v-model="formData.beizhu" placeholder="备注"></el-input>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <!--<el-form-item label="活动时间:">-->
+                                                    <!--<el-date-picker type="daterange" placeholder="选择日期范围">-->
+                                                    <!--</el-date-picker>-->
+                                                    <!--</el-form-item>-->
+                                                </div>
+                                            </div>
+                                        </el-col>
+                                    </el-row>
+                                </div>
+                            </div>
+                            <div class="detail-module">
+                                <div class="detail-title">
+                                    <h3>绑定产品任务配置</h3>
+                                </div>
+                                <div class="detail-content">
+                                    <el-row>
+                                        <el-col :span="24">
+                                            <div class="search-module">
+                                                <div class="detail-info">
+                                                    <p class="input-title">费用设置</p>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="售价:" prop="shoujia">
+                                                            <el-input v-model.number="formData.shoujia"
+                                                                      placeholder="售价"></el-input>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="折扣比例:">
+                                                            <el-select v-model="formData.zhekou" placeholder="请选择">
+                                                                <el-option label="1" value="1"></el-option>
+                                                                <el-option label="0.95" value="0.95"></el-option>
+                                                                <el-option label="0.9" value="0.9"></el-option>
+                                                                <el-option label="0.85" value="0.85"></el-option>
+                                                                <el-option label="0.8" value="0.8"></el-option>
+                                                                <el-option label="0.75" value="0.75"></el-option>
+                                                                <el-option label="0.7" value="0.7"></el-option>
+                                                                <el-option label="0.65" value="0.65"></el-option>
+                                                                <el-option label="0.6" value="0.6"></el-option>
+                                                                <el-option label="0.55" value="0.55"></el-option>
+                                                                <el-option label="0.5" value="0.5"></el-option>
+                                                                <el-option label="0.45" value="0.45"></el-option>
+                                                                <el-option label="0.4" value="0.4"></el-option>
+                                                                <el-option label="0.35" value="0.35"></el-option>
+                                                                <el-option label="0.3" value="0.3"></el-option>
+                                                                <el-option label="0.25" value="0.25"></el-option>
+                                                                <el-option label="0.2" value="0.2"></el-option>
+                                                                <el-option label="0.15" value="0.15"></el-option>
+                                                                <el-option label="0.1" value="0.1"></el-option>
+                                                                <el-option label="0.5" value="0.5"></el-option>
+                                                            </el-select>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="折后价:">
+                                                            <el-input v-model="zhehoujia" placeholder="折后价"></el-input>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="运输方式:">
+                                                            <el-select v-model="formData.yunshu" placeholder="请选择">
+                                                                <el-option label="区域一" value="shanghai"></el-option>
+                                                                <el-option label="区域二" value="beijing"></el-option>
+                                                            </el-select>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="运费:" prop="yunfei">
+                                                            <el-input v-model.number="formData.yunfei" placeholder="运费"></el-input>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="平台佣金比例:">
+                                                            <el-select v-model="formData.yongjin" placeholder="请选择">
+                                                                <el-option label="区域一" value="shanghai"></el-option>
+                                                                <el-option label="区域二" value="beijing"></el-option>
+                                                            </el-select>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <p class="input-title">任务设置</p>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="任务类型:">
+                                                            <el-select v-model="formData.leixing" placeholder="请选择">
+                                                                <el-option label="区域一" value="shanghai"></el-option>
+                                                                <el-option label="区域二" value="beijing"></el-option>
+                                                            </el-select>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="是否收藏:">
+                                                            <el-select v-model="formData.shoucang" placeholder="请选择">
+                                                                <el-option label="区域一" value="shanghai"></el-option>
+                                                                <el-option label="区域二" value="beijing"></el-option>
+                                                            </el-select>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="FEEDBACK:">
+                                                            <el-select v-model="formData.feedback" placeholder="请选择">
+                                                                <el-option label="区域一" value="shanghai"></el-option>
+                                                                <el-option label="区域二" value="beijing"></el-option>
+                                                            </el-select>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="优惠券">
+                                                            <el-input v-model="formData.youhuiquan" placeholder="优惠券"
+                                                                      class="input-sm"></el-input>
+                                                        </el-form-item>
+                                                        <el-form-item>
+                                                            <el-input v-model="formData.youhuiquan2" placeholder="备用优惠券"
+                                                                      class="input-sm"></el-input>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="是否关联:">
+                                                            <el-select v-model="formData.guanlian" placeholder="请选择">
+                                                                <el-option label="区域一" value="shanghai"></el-option>
+                                                                <el-option label="区域二" value="beijing"></el-option>
+                                                            </el-select>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="关联ASIN:">
+                                                            <el-input v-model="formData.asin2"
+                                                                      placeholder="ASIN"></el-input>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <el-col :span="24">
+                                                        <el-col :span="8">
+                                                            <el-form-item label="上评比例:">
+                                                                <el-select v-model="formData.shangping" placeholder="请选择">
+                                                                    <el-option label="区域一" value="shanghai"></el-option>
+                                                                    <el-option label="区域二" value="beijing"></el-option>
+                                                                </el-select>
+                                                            </el-form-item>
+                                                        </el-col>
+                                                        <el-col :span="8">
+                                                            <el-form-item label="完成时间:">
+                                                                <el-date-picker v-model="formData.spDate" type="date"
+                                                                                placeholder="选择日期">
+                                                                </el-date-picker>
+                                                            </el-form-item>
+                                                        </el-col>
+                                                    </el-col>
+                                                    <el-col :span="24">
+                                                        <el-col :span="8">
+                                                            <el-form-item label="FEEDBACK比例:">
+                                                                <el-select v-model="formData.feedbackbili"
+                                                                           placeholder="请选择">
+                                                                    <el-option label="区域一" value="shanghai"></el-option>
+                                                                    <el-option label="区域二" value="beijing"></el-option>
+                                                                </el-select>
+                                                            </el-form-item>
+                                                        </el-col>
+                                                        <el-col :span="8">
+                                                            <el-form-item label="完成时间:">
+                                                                <el-date-picker v-model="formData.fbDate" type="date"
+                                                                                placeholder="选择日期">
+                                                                </el-date-picker>
+                                                            </el-form-item>
+                                                        </el-col>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <el-form-item label="任务周期:">
+                                                            <el-date-picker v-model="formData.date" type="daterange"
+                                                                            @change="dateChange" placeholder="选择日期范围">
+                                                            </el-date-picker>
+                                                        </el-form-item>
+                                                    </el-col>
+                                                    <div class="rate-list">
+                                                        <el-form-item label="下单频率:">
+                                                            <div class="" width="100%">
+                                                                <div class="x-list" v-for="date in dates">
+                                                                    <div class="lf top-align" :class="{ 'week' : date.week==0||date.week==6 }">{{date.date}} :</div>
+                                                                    <div class="lf keyword">
+                                                                        <ul>
+                                                                            <li v-for="keyword in date.keywords">
+                                                                                <el-select v-model="keyword.word"
+                                                                                           placeholder="请选择关键词">
+                                                                                    <el-option v-for="item in formData.keywords" :label="item" :value="item"></el-option>
+                                                                                </el-select>
+                                                                                <el-input v-model="keyword.num" placeholder="0" class="sm" @focus="onFocus"></el-input>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </el-form-item>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </el-col>
+                                    </el-row>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back-box">
+                            <el-button @click="onSubmit" class="o-btn o-btn-lg">创建任务</el-button>
+                            <a href="shuadan.html" class="o-btn o-btn-lg">返回</a>
+                        </div>
+                    </el-form>
+                </el-col>
+            </el-row>
+        </div>
+    </div>
+</div>
+
+
+<!-- js -->
+<script src="../../js/jquery-2.1.4.min.js"></script>
+<script src="../../js/vue.js"></script>
+<script src="../../js/vue-resource.js"></script>
+<!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+<script src="../../js/element-ui.js"></script>
+
+<!-- main.js -->
+<script>
+  var Main = {
+    data: function () {
+      return {
+        rules:{
+          asin: [
+            { required: true, message: 'ASIN码不能为空', trigger: 'blur' },
+            { min: 8, max: 8, message: '长度为8，仅由英文字母与数字组成', trigger: 'blur' }
+          ],
+          shoujia: [
+            { required: true, message: '售价不能为空'},
+            { type: 'number', message: '售价必须为数字值'}
+          ],
+          yunfei: [
+            { required: true, message: '运费不能为空'},
+            { type: 'number', message: '运费必须为数字值'}
+          ],
+        },
+        formData: {
+          asin: '',
+          img: '../../images/img2.png',
+          pingtai: '2',
+          dianpu: 'A10',
+          fenlei: '0',
+          keywords: ['word01', 'word02', 'word03', 'word04', 'word05'],
+          keyword: '',
+          beizhu: '运费 : 8.00',
+          shoujia: '',
+          zhekou: '0.95',
+          zhehoujia: '',
+          yunshu: '2',
+          yunfei: 2,
+          yongjin: '0.15',
+          leixing: '0',
+          shoucang: '0',
+          feedback: '0',
+          youhuiquan: '889-88888-8888',
+          youhuiquan2: '888-88888-8888',
+          guanlian: '0',
+          asin2: 'AE7UUUUU',
+          shangping: '70%',
+          spDate: '2016-01-01',
+          feedbackbili: '2017-01-02',
+          FBDate: '2016-01-01',
+          date: '',
+          xiadan: '60',
+          num: '',
+          kunbang: '0'
+        },
+        days: 0,
+        dates: [],
+      }
+    },
+    computed: {
+      zhehoujia: function () {
+        return parseFloat(this.formData.shoujia * this.formData.zhekou).toFixed(2);
+      },
+    },
+    methods: {
+      onSubmit: function () {
+        console.log('submit!');
+      },
+      dateChange: function () {
+        this.dates = [];
+        var date1 = this.formData.date[0];
+        var date2 = this.formData.date[1];
+        this.days = (date2 - date1) / (1000 * 60 * 60 * 24) + 1;
+        for (var i = 0; i < this.days; i++) {
+          var x = (new Date((date1 / 1000 + 86400 * i) * 1000));
+          this.dates.push({
+            week: x.getDay(),
+            date: x.toLocaleDateString(),
+            keywords:[
+              {
+                word:'',
+                num:''
+              },
+              {
+                word:'',
+                num:''
+              },
+              {
+                word:'',
+                num:''
+              },
+              {
+                word:'',
+                num:''
+              },
+              {
+                word:'',
+                num:''
+              }
+            ],
+          });
+        }
+      },
+      onFocus:function () {
+      }
+    },
+    created: function () {
+
+    }
+  };
+  var Ctor = Vue.extend(Main);
+  new Ctor().$mount('#app');
+</script>
+
+</body>
+</html>

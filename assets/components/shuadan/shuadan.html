@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>刷单刷评首页</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/element-ui.css">
+    <link rel="stylesheet/less" type="text/css" href="../../css/components.less">
+    <script src="../../js/less.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="main-content">
+        <div class="search-module">
+            <el-form
+                    :inline="true"
+                    :model="formData"
+                    label-position="left"
+                    label-width="75px"
+                    class="demo-form-inline">
+                <el-form-item label="关键词:">
+                    <el-input v-model="formData.keyword" placeholder="关键词"></el-input>
+                </el-form-item>
+                <el-form-item label="平台:">
+                    <el-select v-model="formData.platform" placeholder="请选择">
+                        <el-option label="区域一" value="shanghai"></el-option>
+                        <el-option label="区域二" value="beijing"></el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="店铺:">
+                    <el-select v-model="formData. store" placeholder="请选择">
+                        <el-option label="区域一" value="shanghai"></el-option>
+                        <el-option label="区域二" value="beijing"></el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="状态:">
+                    <el-select v-model="formData.state" placeholder="请选择">
+                        <el-option label="区域一" value="shanghai"></el-option>
+                        <el-option label="区域二" value="beijing"></el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="添加人:">
+                    <el-select v-model="formData.people" placeholder="请选择">
+                        <el-option label="区域一" value="shanghai"></el-option>
+                        <el-option label="区域二" value="beijing"></el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="创建时间:">
+                    <el-date-picker v-model="formData.date" type="daterange" placeholder="选择日期范围">
+                    </el-date-picker>
+                </el-form-item>
+                <el-form-item>
+                    <!--<el-button type="primary" @click="onSubmit"><i class="fa fa-search"></i>&nbsp;查询</el-button>-->
+                    <button type="button" class="btn" @click="onSubmit"><i class="fa fa-search"></i>&nbsp;查询</button>
+                </el-form-item>
+            </el-form>
+        </div>
+        <div class="operation-module">
+            <button type="button" class="o-btn"><i class="fa fa-clone"></i>复制</button>
+            <a href="created.html" class="o-btn"><i class="fa fa-plus"></i>创建任务</a>
+            <button type="button" class="o-btn"><i class="fa fa-share-square-o"></i>导出</button>
+        </div>
+        <div class="table-module">
+            <template>
+                <el-table
+                        :data="tableData3"
+                        height="622"
+                        :highlight-current-row="true"
+                        border
+                        style="width: 100%">
+                    <el-table-column type="selection" width="55" height="57" align="center">
+                    </el-table-column>
+                    <el-table-column type="index" label="序号" width="50" height="57" align="center">
+                    </el-table-column>
+                    <el-table-column label="图片" width="60" height="57" align="center">
+                        <template scope="scope">
+                            <img :src="scope.row.src">
+                        </template>
+                    </el-table-column>
+                    <el-table-column label="编码" width="180" height="57" align="left">
+                        <template scope="scope">
+                            <p>{{scope.row.id}}</p>
+                            <a class="alink" href="#">{{scope.row.asin}}</a>
+                        </template>
+                    </el-table-column>
+                    <el-table-column prop="pingtai" label="平台名称" width="100" height="57" align="center">
+                    </el-table-column>
+                    <el-table-column prop="store" label="店铺" height="57" align="center">
+                    </el-table-column>
+                    <el-table-column label="任务类型" width="70" height="57" align="center">
+                        <template scope="scope">
+                            <span>{{scope.row.type}}</span>
+                        </template>
+                    </el-table-column>
+                    <el-table-column label="状态" width="70" height="57" align="center">
+                        <template scope="scope">
+                            <span v-if="scope.row.state==1" class="state blue"><i></i>待审核</span>
+                            <span v-if="scope.row.state==2" class="state blue"><i></i>已审核</span>
+                            <span v-if="scope.row.state==3" class="state wrong"><i></i>已驳回</span>
+                            <span v-if="scope.row.state==4" class="state going"><i></i>进行中</span>
+                            <span v-if="scope.row.state==5" class="state wrong"><i></i>已结束</span>
+                            <span v-if="scope.row.state==6" class="state wrong"><i></i>已过期</span>
+                            <span v-if="scope.row.state==7" class="state wrong"><i></i>异常&nbsp;&nbsp;&nbsp;</span>
+                        </template>
+                    </el-table-column>
+                    <el-table-column label="任务周期" height="57" align="center">
+                        <template scope="scope">
+                            <span>{{scope.row.startDate}}</span>&nbsp;至
+                            <span>{{scope.row.endDate}}</span>
+                        </template>
+                    </el-table-column>
+                    <el-table-column label="需求数/完成数" width="110" height="57" align="center">
+                        <template scope="scope">
+                            <span>{{scope.row.xuqiu}}</span>/<a href="#" class="alink">{{scope.row.wancheng}}</a>
+                        </template>
+                    </el-table-column>
+                    <el-table-column label="上评数" width="70" height="57" align="center">
+                        <template scope="scope">
+                            <span>{{scope.row.shangping}}</span>/<a href="#" class="alink">{{scope.row.shangping2}}</a>
+                        </template>
+                    </el-table-column>
+                    <el-table-column label="FeedBack数" width="90" height="57" align="center">
+                        <template scope="scope">
+                            <span>{{scope.row.feedback}}</span>/<a href="#" class="alink">{{scope.row.feedback2}}</a>
+                        </template>
+                    </el-table-column>
+                    <el-table-column prop="pay" label="支出合计" width="70" height="57" align="center">
+                    </el-table-column>
+                    <el-table-column prop="date" label="创建时间" height="57" align="center">
+                    </el-table-column>
+                    <el-table-column label="操作" width="" height="57" align="center">
+                        <template scope="scope">
+                            <div class="handle">
+                                <a href="#" class="alink"
+                                   v-if="scope.row.state==1||scope.row.state==3||scope.row.state==6">修改</a>
+                                <a href="yichang-youhuiquan.html" class="alink" v-if="scope.row.state==7">修复</a>
+                                <a href="detail-shenhe.html" class="alink" v-if="scope.row.state==1">审核</a>
+                                <a href="#" class="alink" v-if="scope.row.state==1">删除</a>
+                                <a href="#" class="alink"
+                                   v-if="scope.row.state==1||scope.row.state==2||scope.row.state==3||scope.row.state==4||scope.row.state==7">频率</a>
+                                <a href="detail-daishenhe.html" class="alink">详情</a>
+                                <a href="#" class="alink" @click.stop="dialogVisible = true"
+                                   v-if="scope.row.state==2||scope.row.state==4||scope.row.state==7">正常结束</a>
+
+                                <el-dialog title="提示" v-model="dialogVisible" size="tiny">
+                                    <span>这是一段信息</span>
+                                    <span slot="footer" class="dialog-footer">
+                                        <el-button @click="dialogVisible = false">取 消</el-button>
+                                        <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+                                    </span>
+                                </el-dialog>
+                            </div>
+                        </template>
+                    </el-table-column>
+                </el-table>
+            </template>
+            <el-pagination
+                    @size-change="handleSizeChange"
+                    @current-change="handleCurrentChange"
+                    :current-page="currentPage"
+                    :page-sizes="[10, 20, 30, 40]"
+                    :page-size="10"
+                    layout="total, sizes, prev, pager, next, jumper"
+                    :total="total"
+                    class="pagination">
+            </el-pagination>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="../../js/jquery-2.1.4.min.js"></script>
+<script src="../../js/vue.js"></script>
+<script src="../../js/vue-resource.js"></script>
+<script src="../../js/element-ui.js"></script>
+
+
+<script>
+  var Main = {
+    data: function () {
+      return {
+        total: 199,
+        currentPage: 1,
+        formData: {
+          keyword: '',
+          platform: '',
+          store: '',
+          state: '',
+          people: '',
+          date: '',
+        },
+        dialogVisible: false,
+        tableData3: [
+          {
+            id: 'B01LXCC7G90101-0119-0',
+            asin: 'B01LXCC7G9',
+            pingtai: '美国亚马逊',
+            store: 'Key Box',
+            type: '刷单',
+            state: 1,
+            startDate: '2016-05-03',
+            endDate: '2016-05-04',
+            xuqiu: '5',
+            wancheng: '3',
+            shangping: '10',
+            shangping2: '3',
+            feedback: '5',
+            feedback2: '3',
+            pay: '300.00',
+            date: '2016-05-03 10:53:10',
+            src: '../../images/ex.png'
+          },
+          {
+            id: 'B01LXCC7G90101-0119-0',
+            asin: 'B01LXCC7G9',
+            pingtai: '美国亚马逊',
+            store: 'Key Box',
+            type: '刷单',
+            state: 2,
+            startDate: '2016-05-03',
+            endDate: '2016-05-04',
+            xuqiu: '5',
+            wancheng: '3',
+            shangping: '10',
+            shangping2: '3',
+            feedback: '5',
+            feedback2: '3',
+            pay: '300.00',
+            date: '2016-05-03 10:53:10',
+            src: '../../images/ex.png'
+          },
+          {
+            id: 'B01LXCC7G90101-0119-0',
+            asin: 'B01LXCC7G9',
+            pingtai: '意大利亚马逊',
+            store: 'long long long name',
+            type: '刷单',
+            state: 3,
+            startDate: '2016-05-03',
+            endDate: '2016-05-04',
+            xuqiu: '5',
+            wancheng: '3',
+            shangping: '10',
+            shangping2: '3',
+            feedback: '5',
+            feedback2: '3',
+            pay: '300.00',
+            date: '2016-05-03 10:53:10',
+            src: '../../images/ex.png'
+          },
+          {
+            id: 'B01LXCC7G90101-0119-0',
+            asin: 'B01LXCC7G9',
+            pingtai: '名字长的国家亚马逊',
+            store: 'long long long long long name',
+            type: '刷单',
+            state: 4,
+            startDate: '2016-05-03',
+            endDate: '2016-05-04',
+            xuqiu: '5',
+            wancheng: '3',
+            shangping: '10',
+            shangping2: '3',
+            feedback: '5',
+            feedback2: '3',
+            pay: '300.00',
+            date: '2016-05-03 10:53:10',
+            src: '../../images/ex.png'
+          },
+          {
+            id: 'B01LXCC7G90101-0119-0',
+            asin: 'B01LXCC7G9',
+            pingtai: '美国亚马逊',
+            store: 'long long long long long long long long long name',
+            type: '刷单',
+            state: 5,
+            startDate: '2016-05-03',
+            endDate: '2016-05-04',
+            xuqiu: '5',
+            wancheng: '3',
+            shangping: '10',
+            shangping2: '3',
+            feedback: '5',
+            feedback2: '3',
+            pay: '300.00',
+            date: '2016-05-03 10:53:10',
+            src: '../../images/ex.png'
+          },
+          {
+            id: 'B01LXCC7G90101-0119-0',
+            asin: 'B01LXCC7G9',
+            pingtai: '美国亚马逊',
+            store: 'Key Box',
+            type: '刷单',
+            state: 6,
+            startDate: '2016-05-03',
+            endDate: '2016-05-04',
+            xuqiu: '5',
+            wancheng: '3',
+            shangping: '10',
+            shangping2: '3',
+            feedback: '5',
+            feedback2: '3',
+            pay: '300.00',
+            date: '2016-05-03 10:53:10',
+            src: '../../images/ex.png'
+          },
+          {
+            id: 'B01LXCC7G90101-0119-0',
+            asin: 'B01LXCC7G9',
+            pingtai: '美国亚马逊',
+            store: 'Key Box',
+            type: '刷单',
+            state: 7,
+            startDate: '2016-05-03',
+            endDate: '2016-05-04',
+            xuqiu: '5',
+            wancheng: '3',
+            shangping: '10',
+            shangping2: '3',
+            feedback: '5',
+            feedback2: '3',
+            pay: '300.00',
+            date: '2016-05-03 10:53:10',
+            src: '../../images/ex.png'
+          },
+          {
+            id: 'B01LXCC7G90101-0119-0',
+            asin: 'B01LXCC7G9',
+            pingtai: '美国亚马逊',
+            store: 'Key Box',
+            type: '刷单',
+            state: 1,
+            startDate: '2016-05-03',
+            endDate: '2016-05-04',
+            xuqiu: '5',
+            wancheng: '3',
+            shangping: '10',
+            shangping2: '3',
+            feedback: '5',
+            feedback2: '3',
+            pay: '300.00',
+            date: '2016-05-03 10:53:10',
+            src: '../../images/ex.png'
+          },
+          {
+            id: 'B01LXCC7G90101-0119-0',
+            asin: 'B01LXCC7G9',
+            pingtai: '美国亚马逊',
+            store: 'Key Box',
+            type: '刷单',
+            state: 2,
+            startDate: '2016-05-03',
+            endDate: '2016-05-04',
+            xuqiu: '5',
+            wancheng: '3',
+            shangping: '10',
+            shangping2: '3',
+            feedback: '5',
+            feedback2: '3',
+            pay: '300.00',
+            date: '2016-05-03 10:53:10',
+            src: '../../images/ex.png'
+          },
+          {
+            id: 'B01LXCC7G90101-0119-0',
+            asin: 'B01LXCC7G9',
+            pingtai: '美国亚马逊',
+            store: 'Key Box',
+            type: '刷单',
+            state: 3,
+            startDate: '2016-05-03',
+            endDate: '2016-05-04',
+            xuqiu: '5',
+            wancheng: '3',
+            shangping: '10',
+            shangping2: '3',
+            feedback: '5',
+            feedback2: '3',
+            pay: '300.00',
+            date: '2016-05-03 10:53:10',
+            src: '../../images/ex.png'
+          }
+        ]
+      }
+    },
+    methods: {
+      onSubmit: function () {
+        console.log('submit!');
+      },
+      handleSizeChange: function (val) {
+        console.log("每页" + val + "条");
+      },
+      handleCurrentChange: function (val) {
+        this.currentPage = val;
+        console.log("当前页:" + val);
+      }
+    },
+    created: function () {
+
+    }
+  };
+  var Ctor = Vue.extend(Main);
+  new Ctor().$mount('#app');
+</script>
+
+</body>
+</html>

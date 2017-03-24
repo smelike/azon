@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">-->
+    <link rel="stylesheet" href="../../css/element-ui.css">
+    <link rel="stylesheet/less" type="text/css" href="../../css/components.less">
+    <script src="../../js/less.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="main-content">
+        <div class="detail-wrapper">
+            <el-row>
+                <el-col :span="24">
+                    <el-form ref="form" label-width="80px">
+                        <div class="detail-module">
+                            <div class="detail-title">
+                                <h3>产品信息</h3>
+                            </div>
+                            <div class="detail-content">
+                                <el-row>
+                                    <el-col :span="4">
+                                        <div class="images">
+                                            <img :src="product2.img" alt="">
+                                        </div>
+                                    </el-col>
+                                    <el-col :span="20">
+                                        <div class="detail-info">
+                                            <el-row>
+                                                <el-col :span="6">
+                                                    <div>
+                                                        <p>ASIN&nbsp;:</p>
+                                                        <span><a href="#" class="alink">{{product2.asin}}</a></span>
+                                                    </div>
+                                                </el-col>
+                                                <el-col :span="6">
+                                                    <div>
+                                                        <p>分类&nbsp;:</p>
+                                                        <span>衣服饰品</span>
+                                                    </div>
+                                                </el-col>
+                                                <el-col :span="6">
+                                                    <div>
+                                                        <p>平台&nbsp;:</p>
+                                                        <span v-if="product2.pingtai === '1'">美国亚马逊</span>
+                                                        <span v-if="product2.pingtai === '2'">日本亚马逊</span>
+                                                        <span v-if="product2.pingtai === '3'">德国亚马逊</span>
+                                                    </div>
+                                                </el-col>
+                                                <el-col :span="6">
+                                                    <div>
+                                                        <p>店铺&nbsp;:</p>
+                                                        <span>{{product2.dianpu}}</span>
+                                                    </div>
+                                                </el-col>
+                                                <el-col :span="6">
+                                                    <div>
+                                                        <p>SKU&nbsp;:</p>
+                                                        <span>{{product2.sku}}</span>
+                                                    </div>
+                                                </el-col>
+                                                <el-col :span="18">
+                                                    <div>
+                                                        <p>关键词&nbsp;:</p>
+                                                        <span v-for="word in product2.keyword">{{word+'，'}}</span>
+                                                    </div>
+                                                </el-col>
+                                                <el-col :span="6">
+                                                    <div>
+                                                        <p>大任务编码&nbsp;:</p>
+                                                        <span><a href="#" class="alink">{{product2.darenwu}}</a></span>
+                                                    </div>
+                                                </el-col>
+                                                <el-col :span="6">
+                                                    <div>
+                                                        <p>子任务编码&nbsp;:</p>
+                                                        <span><a href="#" class="alink">{{product2.zirenwu}}</a></span>
+                                                    </div>
+                                                </el-col>
+                                                <el-col :span="24">
+                                                    <div>
+                                                        <p>异常原因&nbsp;:</p>
+                                                        <span>价格不对</span>
+                                                    </div>
+                                                </el-col>
+
+                                                <el-col :span="6">
+                                                    <div>
+                                                        <p>原售价&nbsp;:</p>
+                                                        <span>{{product2.sign[product2.currency]+product2.shoujia}}</span>
+                                                    </div>
+                                                </el-col>
+                                                <el-col :span="6">
+                                                    <div>
+                                                        <p>折扣比例&nbsp;:</p>
+                                                        <span>{{product2.zhekou}}</span>
+                                                    </div>
+                                                </el-col>
+                                                <el-col :span="6">
+                                                    <div>
+                                                        <p>折后价&nbsp;:</p>
+                                                        <span>{{product2.zhehoujia}}</span>
+                                                    </div>
+                                                </el-col>
+                                                <el-col :span="24">
+                                                    <el-row>
+                                                        <el-col :span="6">
+                                                            <el-form-item label="售价 :">
+                                                                <el-input></el-input>
+                                                            </el-form-item>
+                                                        </el-col>
+                                                    </el-row>
+                                                </el-col>
+                                            </el-row>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </div>
+                        <el-form-item>
+                            <div class="back-box">
+                                <el-button @click="onSubmit" class="o-btn o-btn-lg">修复</el-button>
+                                <a href="shuadan.html" class="o-btn o-btn-lg">返回</a>
+                            </div>
+                        </el-form-item>
+                    </el-form>
+                </el-col>
+            </el-row>
+        </div>
+    </div>
+</div>
+
+
+<!-- js -->
+<script src="../../js/jquery-2.1.4.min.js"></script>
+<script src="../../js/vue.js"></script>
+<script src="../../js/vue-resource.js"></script>
+<!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+<script src="../../js/element-ui.js"></script>
+
+<!-- main.js -->
+<script>
+  var Main = {
+    data: function () {
+      return {
+        task: {
+          code: '000-0000',
+          date: '2017-3-17',
+          name: 'Yunk'
+        },
+        allot: {
+          id: 'ABD332B',
+          rate: [
+            {
+              date: '2017-3-17',
+              target: '8',
+              finish: '3',
+              src: '#'
+            },
+            {
+              date: '2017-3-17',
+              target: '8',
+              finish: '3',
+              src: '#'
+            },
+            {
+              date: '2017-3-17',
+              target: '8',
+              finish: '3',
+              src: '#'
+            },
+            {
+              date: '2017-3-17',
+              target: '8',
+              finish: '3',
+              src: '#'
+            },
+            {
+              date: '2017-3-17',
+              target: '8',
+              finish: '3',
+              src: '#'
+            },
+            {
+              date: '2017-3-17',
+              target: '8',
+              finish: '3',
+              src: '#'
+            },
+            {
+              date: '2017-3-17',
+              target: '8',
+              finish: '3',
+              src: '#'
+            },
+            {
+              date: '2017-3-17',
+              target: '8',
+              finish: '3',
+              src: '#'
+            },
+            {
+              date: '2017-3-17',
+              target: '8',
+              finish: '3',
+              src: '#'
+            },
+            {
+              date: '2017-3-17',
+              target: '8',
+              finish: '3',
+              src: '#'
+            },
+            {
+              date: '2017-3-17',
+              target: '8',
+              finish: '3',
+              src: '#'
+            },
+          ]
+        },
+        product2: {
+          asin: 'AE7U0000',
+          img: '../../images/img2.png',
+          fenlei: '0',
+          pingtai: '2',
+          dianpu: 'A10',
+          sku: '000000',
+          keyword: ['word01', 'word02', 'word03'],
+          darenwu: 'FSDFS955F685FSDF-0011',
+          zirenwu: 'FSDFS955F685FSDF-0012',
+          guanlian: '0',
+          leixing: '0',
+          shoucang: '0',
+          asin2: 'AE7UUUUU',
+          feedback: '0',
+          youhuiquan: '889-88888-8888',
+          xiadan: '88',
+          startDate: '2016-01-01',
+          endDate: '2016-02-01',
+          currency: '1',
+          sign: ['$', '￥'],
+          shoujia: '68',
+          yongjin: '0.15',
+          zhekou: '1.00',
+          zhehoujia: '68',
+          yunshu: '2',
+          beizhu: '运费 : 8.00',
+        },
+        expenditure: [
+          {
+            yuji: 28,
+            shiji: 32
+          },
+          {
+            yuji: 46,
+            shiji: 99
+          },
+          {
+            yuji: 77,
+            shiji: 88
+          },
+          {
+            yuji: 21,
+            shiji: 32
+          },
+          {
+            yuji: 12,
+            shiji: 11
+          },
+          {
+            yuji: 77,
+            shiji: 45
+          },
+        ]
+      }
+    },
+    methods: {
+      onSubmit: function () {
+        console.log('submit!');
+      },
+    },
+    created: function () {
+
+    }
+  };
+  var Ctor = Vue.extend(Main);
+  new Ctor().$mount('#app');
+</script>
+
+</body>
+</html>
