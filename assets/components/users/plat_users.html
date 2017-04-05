@@ -383,6 +383,7 @@
                         type: 'info'
                     });
                 });
+                this.total = this.total - 1;
             },
             handleSizeChange: function (val) {
                 var _this = this;
@@ -418,6 +419,7 @@
                 });
             },
             submitForm: function (formName) {
+                this.user_add = false;
                 var valiate_result = null;
                 this.$refs[formName].validate(function (valid) {
                     valiate_result = valid;
@@ -467,6 +469,7 @@
                                 type: 'info'
                             });
                         });
+                this.total = this.total + 1;
             }
         },
         created: function () {
