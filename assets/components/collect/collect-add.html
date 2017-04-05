@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">-->
+    <link rel="stylesheet" href="../../css/element-ui.css">
+    <link rel="stylesheet/less" type="text/css" href="../../css/components.less">
+    <script src="../../js/less.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="main-content">
+        <div class="detail-wrapper no-top">
+            <el-row>
+                <el-col :span="24">
+                    <el-form
+                            :model="formData"
+                            ref="formData"
+                            :inline="true"
+                            :rules="rules"
+                            label-width="80px">
+                        <div class="detail-module">
+                            <div class="detail-title">
+                                <h3>驳回原因</h3>
+                            </div>
+                            <div class="detail-content">
+                                <div class="detail-info no-float">
+                                    <el-row>
+                                        <el-col :span="24">
+                                            <div>
+                                                <p>审核备注 :</p>
+                                                <span>我方将产品价格由$10.00修改为$15.00</span>
+                                            </div>
+                                        </el-col>
+                                    </el-row>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-module">
+                            <div class="detail-title">
+                                <h3>产品信息</h3>
+                            </div>
+                            <div class="detail-content">
+                                <el-row>
+                                    <el-col :span="20">
+                                        <div class="search-module">
+                                            <div class="detail-info">
+                                                <el-col :span="12">
+                                                    <el-form-item label="ASIN:" prop="asin">
+                                                        <el-input v-model="formData.asin" placeholder="ASIN"></el-input>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="12">
+                                                    <el-form-item label="平台:">
+                                                        <el-select v-model="formData.pingtai" placeholder="请选择">
+                                                            <el-option label="美国亚马逊" value="1"></el-option>
+                                                            <el-option label="日本亚马逊" value="2"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="12">
+                                                    <el-form-item label="店铺:">
+                                                        <el-select v-model="formData.dianpu" placeholder="请选择">
+                                                            <el-option label="A016" value="1"></el-option>
+                                                            <el-option label="A0888" value="2"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="12">
+                                                    <el-form-item label="关键词:">
+                                                        <el-input v-model="formData.beizhu" placeholder="关键词"></el-input>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <!--<el-form-item label="活动时间:">-->
+                                                <!--<el-date-picker type="daterange" placeholder="选择日期范围">-->
+                                                <!--</el-date-picker>-->
+                                                <!--</el-form-item>-->
+                                            </div>
+                                        </div>
+                                    </el-col>
+                                    <el-col :span="4">
+                                        <div class="images">
+                                            <img :src="formData.img" alt="" class="sm">
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </div>
+                        <div class="detail-module">
+                            <div class="detail-title">
+                                <h3>任务配置</h3>
+                            </div>
+                            <div class="detail-content">
+                                <el-row>
+                                    <el-col :span="24">
+                                        <div class="search-module">
+                                            <div class="detail-info">
+                                                <el-col :span="24">
+                                                    <el-form-item label="任务周期:">
+                                                        <el-date-picker v-model="formData.date" type="daterange" placeholder="选择日期范围">
+                                                        </el-date-picker>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="24">
+                                                    <el-form-item label="收藏数量:">
+                                                        <el-input v-model="formData.num"
+                                                                  placeholder="ASIN"></el-input>
+                                                    </el-form-item>
+                                                </el-col>
+                                                <el-col :span="24">
+                                                    <el-form-item label="备注:">
+                                                        <el-input
+                                                                type="textarea"
+                                                                :rows="3"
+                                                                placeholder="请输入内容"
+                                                                class="textarea-lg"
+                                                                v-model="formData.note">
+                                                        </el-input>
+                                                    </el-form-item>
+                                                </el-col>
+                                            </div>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </div>
+                        <div class="back-box">
+                            <el-button @click="onSubmit" class="o-btn o-btn-lg">创建任务</el-button>
+                            <a href="collect-m.html" class="o-btn o-btn-lg">返回</a>
+                        </div>
+                    </el-form>
+                </el-col>
+            </el-row>
+        </div>
+    </div>
+</div>
+
+
+<!-- js -->
+<script src="../../js/jquery-2.1.4.min.js"></script>
+<script src="../../js/vue.js"></script>
+<script src="../../js/vue-resource.js"></script>
+<!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+<script src="../../js/element-ui.js"></script>
+
+<!-- main.js -->
+<script>
+  var Main = {
+    data: function () {
+      return {
+        rules:{
+          asin: [
+            { required: true, message: 'ASIN码不能为空', trigger: 'blur' },
+            { min: 8, max: 8, message: '长度为8，仅由英文字母与数字组成', trigger: 'blur' }
+          ],
+          shoujia: [
+            { required: true, message: '售价不能为空'},
+            { type: 'number', message: '售价必须为数字值'}
+          ],
+          yunfei: [
+            { required: true, message: '运费不能为空'},
+            { type: 'number', message: '运费必须为数字值'}
+          ],
+        },
+        formData: {
+          asin: '',
+          img: '../../images/img2.png',
+          pingtai: '2',
+          dianpu: 'A10',
+          fenlei: '0',
+          keywords: ['word01', 'word02', 'word03', 'word04', 'word05'],
+          keyword: '',
+          beizhu: '运费 : 8.00',
+          shoujia: '',
+          zhekou: '0.95',
+          zhehoujia: '',
+          yunshu: '2',
+          yunfei: 2,
+          yongjin: '0.15',
+          leixing: '0',
+          shoucang: '0',
+          feedback: '0',
+          youhuiquan: '889-88888-8888',
+          youhuiquan2: '888-88888-8888',
+          guanlian: '0',
+          asin2: 'AE7UUUUU',
+          shangping: '70%',
+          spDate: '2016-01-01',
+          feedbackbili: '2017-01-02',
+          FBDate: '2016-01-01',
+          date: '',
+          xiadan: '60',
+          num: '2',
+		  note:'',
+          kunbang: '0'
+        },
+        days: 0,
+        dates: [],
+      }
+    },
+    computed: {
+      zhehoujia: function () {
+        return parseFloat(this.formData.shoujia * this.formData.zhekou).toFixed(2);
+      },
+    },
+    methods: {
+      onSubmit: function () {
+        console.log('submit!');
+      },
+      dateChange: function () {
+        this.dates = [];
+        var date1 = this.formData.date[0];
+        var date2 = this.formData.date[1];
+        this.days = (date2 - date1) / (1000 * 60 * 60 * 24) + 1;
+        for (var i = 0; i < this.days; i++) {
+          var x = (new Date((date1 / 1000 + 86400 * i) * 1000));
+          this.dates.push({
+            week: x.getDay(),
+            date: x.toLocaleDateString(),
+            keywords:[
+              {
+                word:'',
+                num:''
+              },
+              {
+                word:'',
+                num:''
+              },
+              {
+                word:'',
+                num:''
+              },
+              {
+                word:'',
+                num:''
+              },
+              {
+                word:'',
+                num:''
+              }
+            ],
+          });
+        }
+      },
+      onFocus:function () {
+      }
+    },
+    created: function () {
+
+    }
+  };
+  var Ctor = Vue.extend(Main);
+  new Ctor().$mount('#app');
+</script>
+
+</body>
+</html>

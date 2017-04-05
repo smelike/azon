@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/element-ui.css">
+    <link rel="stylesheet/less" type="text/css" href="../../css/components.less">
+    <script src="../../js/less.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="main-content">
+        <div class="operation-module">
+            <button type="button" class="o-btn" @click.stop="addVisible = true"><i class="fa fa-plus"></i>新增</button>
+            <button type="button" class="o-btn" @click.stop="btnVisible = true"><i class="fa fa-plus"></i>按钮编辑
+            </button>
+
+            <el-dialog title="新增" v-model="addVisible" size="tiny" align="left"
+                       class="reviseForm" top="5%">
+                <el-form :model="addForm"
+                         label-width="150px" class="demo-ruleForm">
+
+                    <div class="dialog-title">基本信息</div>
+                    <el-form-item label="菜单名称">
+                        <el-input v-model="addForm.caidan"></el-input>
+                    </el-form-item>
+                    <el-form-item label="编码">
+                        <el-input v-model="addForm.bianma"></el-input>
+                    </el-form-item>
+
+                    <el-form-item label="所属平台">
+                        <el-select v-model="addForm.pingtai" placeholder="请选择">
+                            <el-option label="卖家端" value="1"></el-option>
+                            <el-option label="商家端" value="2"></el-option>
+                        </el-select>
+                    </el-form-item>
+                    <el-form-item label="上级菜单">
+                        <el-select v-model="addForm.shangji" placeholder="请选择">
+                            <el-option label="无" value="1"></el-option>
+                            <el-option label="卖家管理员" value="2"></el-option>
+                            <el-option label="超级管理员" value="3"></el-option>
+                        </el-select>
+                    </el-form-item>
+
+                    <el-form-item label="链接地址">
+                        <el-input v-model="addForm.lianjie"></el-input>
+                    </el-form-item>
+                    <el-form-item label="排序">
+                        <el-input v-model="addForm.paixu"></el-input>
+                    </el-form-item>
+                </el-form>
+                <span slot="footer" class="dialog-footer">
+                    <el-button @click="addVisible = false">取 消</el-button>
+                    <el-button type="primary">确 定</el-button>
+                </span>
+            </el-dialog>
+
+            <el-dialog title="按钮编辑" v-model="btnVisible" size="large" align="left"
+                       class="reviseForm min-height">
+                <template>
+                    <el-table
+                            :data="btnData"
+                            :highlight-current-row="true"
+                            border
+                            style="width: 100%">
+                        <el-table-column prop="tubiao" label="图标" align="center">
+                        </el-table-column>
+                        <el-table-column prop="anniu" label="按钮名称" width="100" align="center">
+                        </el-table-column>
+                        <el-table-column prop="bianma" label="编码" align="center">
+                        </el-table-column>
+                        <el-table-column prop="paixu" label="排序" align="center">
+                        </el-table-column>
+                        <el-table-column prop="shuom" label="说明" align="center">
+                        </el-table-column>
+
+                        <el-table-column label="操作" width="100" align="center">
+                            <template scope="scope">
+                                <div class="">
+                                    <a href="#" class="alink" @click.stop="reviseBtnVisible = true">编辑</a>
+                                    <a href="#" class="alink" @click.stop="deleteBtnVisible = true">删除</a>
+
+                                    <el-dialog title="修改" v-model="reviseBtnVisible" size="tiny" align="left"
+                                               class="reviseForm" :modal="false" top="5%">
+
+                                        <el-form :model="scope"
+                                                 label-width="120px" class="demo-ruleForm">
+
+                                            <div class="dialog-title">基本信息</div>
+                                            <el-form-item label="图标">
+                                                <el-input v-model="scope.tubiao"></el-input>
+                                            </el-form-item>
+                                            <el-form-item label="按钮名称">
+                                                <el-input v-model="scope.anniu"></el-input>
+                                            </el-form-item>
+
+                                            <el-form-item label="编码">
+                                                <el-input v-model="scope.bianma"></el-input>
+                                            </el-form-item>
+                                            <el-form-item label="排序">
+                                                <el-input v-model="scope.paixu"></el-input>
+                                            </el-form-item>
+                                            <el-form-item label="说明">
+                                                <el-input v-model="scope.shuoming"></el-input>
+                                            </el-form-item>
+                                        </el-form>
+
+                                        <span slot="footer" class="dialog-footer">
+                                        <el-button @click="reviseBtnVisible = false">取 消</el-button>
+                                        <el-button type="primary">确 定</el-button>
+                                        </span>
+                                    </el-dialog>
+
+                                    <el-dialog title="删除" v-model="deleteBtnVisible" size="tiny" align="left"
+                                               class="reviseForm" :modal="false">
+                                        <span>确定要删除吗？</span>
+                                        <span slot="footer" class="dialog-footer">
+                                        <el-button @click="deleteBtnVisible = false">取 消</el-button>
+                                        <el-button type="primary">确 定</el-button>
+                                    </span>
+                                    </el-dialog>
+                                </div>
+                            </template>
+                        </el-table-column>
+                    </el-table>
+                </template>
+
+                <span slot="footer" class="dialog-footer">
+                    <el-button @click="btnVisible = false">取 消</el-button>
+                    <el-button type="primary" @click="onSubmit">确 定</el-button>
+                </span>
+            </el-dialog>
+
+        </div>
+        <div class="table-module">
+            <template>
+                <el-table
+                        :data="tableData3"
+                        :highlight-current-row="true"
+                        border
+                        style="width: 100%">
+                    <el-table-column prop="pingtai" label="所属平台" align="center">
+                    </el-table-column>
+
+                    <el-table-column type="expand">
+                        <template scope="scope">
+                            <el-table
+                                    :data="scope.row.zipingtai"
+                                    :highlight-current-row="true"
+                                    border
+                                    style="width: 100%">
+
+                                <el-table-column prop="caidan" label="菜单名称" align="center">
+                                </el-table-column>
+                                <el-table-column prop="bianma" label="编码" align="center">
+                                </el-table-column>
+                                <el-table-column prop="shangji" label="上级菜单" align="center">
+                                </el-table-column>
+                                <el-table-column prop="lianjie" label="链接地址" align="center">
+                                </el-table-column>
+                                <el-table-column label="是否可见" align="center">
+                                    <template scope="scope">
+                                        <el-checkbox v-model="scope.row.kejian">备选项</el-checkbox>
+                                    </template>
+                                </el-table-column>
+                                <el-table-column label="是否启用" align="center">
+                                    <template scope="scope">
+                                        <el-checkbox v-model="scope.row.qiyong">备选项</el-checkbox>
+                                    </template>
+                                </el-table-column>
+                                <el-table-column prop="paixu" label="排序" align="center">
+                                </el-table-column>
+                                <el-table-column label="操作" width="150" align="center">
+                                    <template scope="scope">
+                                        <div class="">
+                                            <a href="#" class="alink" @click.stop="reviseVisible = true">修改</a>
+                                            <a href="#" class="alink" @click.stop="setVisible = true">设置</a>
+                                            <a href="#" class="alink" @click.stop="deleteVisible = true">删除</a>
+
+                                            <el-dialog title="修改" v-model="reviseVisible" size="tiny" align="left"
+                                                       class="reviseForm" top="5%">
+                                                <el-form :model="scope.row"
+                                                         label-width="150px" class="demo-ruleForm">
+
+                                                    <div class="dialog-title">基本信息</div>
+                                                    <el-form-item label="菜单名称">
+                                                        <el-input v-model="scope.row.caidan"></el-input>
+                                                    </el-form-item>
+                                                    <el-form-item label="编码">
+                                                        <el-input v-model="scope.row.bianma"></el-input>
+                                                    </el-form-item>
+
+                                                    <el-form-item label="所属平台">
+                                                        <el-select v-model="scope.row.pingtai" placeholder="请选择">
+                                                            <el-option label="卖家端" value="1"></el-option>
+                                                            <el-option label="商家端" value="2"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+                                                    <el-form-item label="上级菜单">
+                                                        <el-select v-model="scope.row.shangji" placeholder="请选择">
+                                                            <el-option label="无" value="1"></el-option>
+                                                            <el-option label="卖家管理员" value="2"></el-option>
+                                                            <el-option label="超级管理员" value="3"></el-option>
+                                                        </el-select>
+                                                    </el-form-item>
+
+                                                    <el-form-item label="链接地址">
+                                                        <el-input v-model="scope.row.lianjie"></el-input>
+                                                    </el-form-item>
+                                                    <el-form-item label="排序">
+                                                        <el-input v-model="scope.row.paixu"></el-input>
+                                                    </el-form-item>
+
+                                                </el-form>
+                                                <span slot="footer" class="dialog-footer">
+                                        <el-button @click="reviseVisible = false">取 消</el-button>
+                                        <el-button type="primary">确 定</el-button>
+                                    </span>
+                                            </el-dialog>
+
+                                            <el-dialog title="设置" v-model="setVisible" size="tiny" align="left"
+                                                       class="reviseForm" top="5%">
+
+                                                <div class="edit-btn-page">
+                                                    <div class="edit-btn">
+                                                        <span>请为页面添加功能按钮</span>
+                                                    </div>
+                                                    <div class="edit-select">
+                                                        <template>
+                                                            <el-checkbox :indeterminate="scope.row.isIndeterminate"
+                                                                         v-model="scope.row.checkAll"
+                                                                         @change="handleCheckAllChange(scope.row)">全选
+                                                            </el-checkbox>
+                                                            <div style="margin: 15px 0;"></div>
+                                                            <el-checkbox-group v-model="scope.row.checkedCities"
+                                                                               @change="handleCheckedCitiesChange(scope.row)">
+                                                                <el-checkbox v-for="city in scope.row.cities"
+                                                                             :label="city">
+                                                                    {{city}}
+                                                                </el-checkbox>
+                                                            </el-checkbox-group>
+                                                        </template>
+                                                    </div>
+                                                </div>
+
+                                                <span slot="footer" class="dialog-footer">
+                                        <el-button @click="reviseVisible = false">取 消</el-button>
+                                        <el-button type="primary" @click="onSubmit">确 定</el-button>
+                                    </span>
+                                            </el-dialog>
+
+                                            <el-dialog title="删除" v-model="deleteVisible" size="tiny" align="left"
+                                                       class="ruleAddForm">
+                                                <span>确定要删除吗？</span>
+                                                <span slot="footer" class="dialog-footer">
+                                        <el-button @click="deleteVisible = false">取 消</el-button>
+                                        <el-button type="primary">确 定</el-button>
+                                    </span>
+                                            </el-dialog>
+                                        </div>
+                                    </template>
+                                </el-table-column>
+                            </el-table>
+                        </template>
+                    </el-table-column>
+
+                    <el-table-column prop="caidan" label="菜单名称" align="center">
+                    </el-table-column>
+                    <el-table-column prop="bianma" label="编码" align="center">
+                    </el-table-column>
+                    <el-table-column prop="lianjie" label="链接地址" align="center">
+                    </el-table-column>
+                    <el-table-column label="是否可见" align="center">
+                        <template scope="scope">
+                            <el-checkbox v-model="scope.row.kejian">备选项</el-checkbox>
+                        </template>
+                    </el-table-column>
+                    <el-table-column label="是否启用" align="center">
+                        <template scope="scope">
+                            <el-checkbox v-model="scope.row.qiyong">备选项</el-checkbox>
+                        </template>
+                    </el-table-column>
+                    <el-table-column prop="paixu" label="排序" align="center">
+                    </el-table-column>
+                    <el-table-column label="操作" width="150" align="center">
+                        <template scope="scope">
+                            <div class="">
+                                <a href="#" class="alink" @click.stop="reviseVisible = true">修改</a>
+                                <a href="#" class="alink" @click.stop="setVisible = true">设置</a>
+                                <a href="#" class="alink" @click.stop="deleteVisible = true">删除</a>
+
+                                <el-dialog title="修改" v-model="reviseVisible" size="tiny" align="left"
+                                           class="reviseForm" top="5%">
+                                    <el-form :model="scope.row"
+                                             label-width="120px" class="demo-ruleForm">
+
+                                        <div class="dialog-title">基本信息</div>
+                                        <el-form-item label="菜单名称">
+                                            <el-input v-model="scope.row.caidan"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="编码">
+                                            <el-input v-model="scope.row.bianma"></el-input>
+                                        </el-form-item>
+
+                                        <el-form-item label="所属平台">
+                                            <el-select v-model="scope.row.pingtai" placeholder="请选择">
+                                                <el-option label="卖家端" value="1"></el-option>
+                                                <el-option label="商家端" value="2"></el-option>
+                                            </el-select>
+                                        </el-form-item>
+                                        <el-form-item label="上级菜单">
+                                            <el-select v-model="scope.row.shangji" placeholder="请选择">
+                                                <el-option label="无" value="1"></el-option>
+                                                <el-option label="卖家管理员" value="2"></el-option>
+                                                <el-option label="超级管理员" value="3"></el-option>
+                                            </el-select>
+                                        </el-form-item>
+
+                                        <el-form-item label="链接地址">
+                                            <el-input v-model="scope.row.lianjie"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="排序">
+                                            <el-input v-model="scope.row.paixu"></el-input>
+                                        </el-form-item>
+
+                                    </el-form>
+                                    <span slot="footer" class="dialog-footer">
+                                        <el-button @click="reviseVisible = false">取 消</el-button>
+                                        <el-button type="primary">确 定</el-button>
+                                    </span>
+                                </el-dialog>
+
+                                <el-dialog title="设置" v-model="setVisible" size="tiny" align="left"
+                                           class="reviseForm" top="5%">
+
+                                    <div class="edit-btn-page">
+                                        <div class="edit-btn">
+                                            <span>请为页面添加功能按钮</span>
+                                        </div>
+                                        <div class="edit-select">
+                                            <template>
+                                                <el-checkbox :indeterminate="scope.row.isIndeterminate"
+                                                             v-model="scope.row.checkAll"
+                                                             @change="handleCheckAllChange(scope.row)">全选
+                                                </el-checkbox>
+                                                <div style="margin: 15px 0;"></div>
+                                                <el-checkbox-group v-model="scope.row.checkedCities"
+                                                                   @change="handleCheckedCitiesChange(scope.row)">
+                                                    <el-checkbox v-for="city in scope.row.cities" :label="city">
+                                                        {{city}}
+                                                    </el-checkbox>
+                                                </el-checkbox-group>
+                                            </template>
+                                        </div>
+                                    </div>
+
+                                    <span slot="footer" class="dialog-footer">
+                                        <el-button @click="reviseVisible = false">取 消</el-button>
+                                        <el-button type="primary" @click="onSubmit">确 定</el-button>
+                                    </span>
+                                </el-dialog>
+
+                                <el-dialog title="删除" v-model="deleteVisible" size="tiny" align="left"
+                                           class="ruleAddForm">
+                                    <span>确定要删除吗？</span>
+                                    <span slot="footer" class="dialog-footer">
+                                        <el-button @click="deleteVisible = false">取 消</el-button>
+                                        <el-button type="primary">确 定</el-button>
+                                    </span>
+                                </el-dialog>
+                            </div>
+                        </template>
+                    </el-table-column>
+                </el-table>
+            </template>
+        </div>
+    </div>
+</div>
+
+
+<script src="../../js/vue.js"></script>
+<script src="../../js/vue-resource.js"></script>
+<script src="../../js/element-ui.js"></script>
+
+<script>
+  var Main = {
+    data: function () {
+      return {
+        formData: {
+          keyword: '',
+          type: '',
+        },
+        reviseVisible: false,
+        setVisible: false,
+        deleteVisible: false,
+        btnVisible: false,
+        addVisible: false,
+        reviseBtnVisible:false,
+        deleteBtnVisible:false,
+        addForm:{
+          pingtai: '卖家端',
+          caidan: '基础管理',
+          zipingtai: [
+            {
+              caidan: '基础管理',
+              bianma: '1111',
+              shangji: '基础管理',
+              lianjie: '11111111@163.com',
+              kejian: false,
+              qiyong: false,
+              paixu: 'a',
+              checkAll: true,
+              checkedCities: ['上海', '北京'],
+              cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+              isIndeterminate: true
+            },
+            {
+              caidan: '基础管理',
+              bianma: '1111',
+              shangji: '基础管理',
+              lianjie: '11111111@163.com',
+              kejian: false,
+              qiyong: false,
+              paixu: 'a',
+              checkAll: true,
+              checkedCities: ['上海', '北京'],
+              cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+              isIndeterminate: true
+            },
+            {
+              caidan: '基础管理',
+              bianma: '1111',
+              shangji: '基础管理',
+              lianjie: '11111111@163.com',
+              kejian: false,
+              qiyong: false,
+              paixu: 'a',
+              checkAll: true,
+              checkedCities: ['上海', '北京'],
+              cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+              isIndeterminate: true
+            },
+          ],
+          bianma: '1111',
+          shangji: '',
+          lianjie: '11111111@163.com',
+          kejian: false,
+          qiyong: false,
+          paixu: 'a',
+          checkAll: true,
+          checkedCities: ['上海', '北京'],
+          cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+          isIndeterminate: true
+        },
+        tableData3: [
+          {
+            pingtai: '卖家端',
+            caidan: '基础管理',
+            zipingtai: [
+              {
+                caidan: '基础管理',
+                bianma: '1111',
+                shangji: '基础管理',
+                lianjie: '11111111@163.com',
+                kejian: false,
+                qiyong: false,
+                paixu: 'a',
+                checkAll: true,
+                checkedCities: ['上海', '北京'],
+                cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+                isIndeterminate: true
+              },
+              {
+                caidan: '基础管理',
+                bianma: '1111',
+                shangji: '基础管理',
+                lianjie: '11111111@163.com',
+                kejian: false,
+                qiyong: false,
+                paixu: 'a',
+                checkAll: true,
+                checkedCities: ['上海', '北京'],
+                cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+                isIndeterminate: true
+              },
+              {
+                caidan: '基础管理',
+                bianma: '1111',
+                shangji: '基础管理',
+                lianjie: '11111111@163.com',
+                kejian: false,
+                qiyong: false,
+                paixu: 'a',
+                checkAll: true,
+                checkedCities: ['上海', '北京'],
+                cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+                isIndeterminate: true
+              },
+            ],
+            bianma: '1111',
+            shangji: '',
+            lianjie: '11111111@163.com',
+            kejian: false,
+            qiyong: false,
+            paixu: 'a',
+            checkAll: true,
+            checkedCities: ['上海', '北京'],
+            cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+            isIndeterminate: true
+          },
+          {
+            pingtai: '卖家端',
+            caidan: '任务管理',
+            zipingtai: [
+              {
+                caidan: '基础管理',
+                bianma: '1111',
+                shangji: '基础管理',
+                lianjie: '11111111@163.com',
+                kejian: false,
+                qiyong: false,
+                paixu: 'a',
+                checkAll: true,
+                checkedCities: ['上海', '北京'],
+                cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+                isIndeterminate: true
+              },
+              {
+                caidan: '基础管理',
+                bianma: '1111',
+                shangji: '基础管理',
+                lianjie: '11111111@163.com',
+                kejian: false,
+                qiyong: false,
+                paixu: 'a',
+                checkAll: true,
+                checkedCities: ['上海', '北京'],
+                cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+                isIndeterminate: true
+              },
+              {
+                caidan: '基础管理',
+                bianma: '1111',
+                shangji: '基础管理',
+                lianjie: '11111111@163.com',
+                kejian: false,
+                qiyong: false,
+                paixu: 'a',
+                checkAll: true,
+                checkedCities: ['上海', '北京'],
+                cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+                isIndeterminate: true
+              },
+            ],
+            bianma: '1111',
+            shangji: '',
+            lianjie: '11111111@163.com',
+            kejian: false,
+            qiyong: false,
+            paixu: 'a',
+            checkAll: true,
+            checkedCities: ['上海', '北京'],
+            cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+            isIndeterminate: true
+          },
+          {
+            pingtai: '商家端',
+            caidan: '基础管理',
+            zipingtai: [
+              {
+                caidan: '基础管理',
+                bianma: '1111',
+                shangji: '基础管理',
+                lianjie: '11111111@163.com',
+                kejian: false,
+                qiyong: false,
+                paixu: 'a',
+                checkAll: true,
+                checkedCities: ['上海', '北京'],
+                cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+                isIndeterminate: true
+              },
+              {
+                caidan: '基础管理',
+                bianma: '1111',
+                shangji: '基础管理',
+                lianjie: '11111111@163.com',
+                kejian: false,
+                qiyong: false,
+                paixu: 'a',
+                checkAll: true,
+                checkedCities: ['上海', '北京'],
+                cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+                isIndeterminate: true
+              },
+              {
+                caidan: '基础管理',
+                bianma: '1111',
+                shangji: '基础管理',
+                lianjie: '11111111@163.com',
+                kejian: false,
+                qiyong: false,
+                paixu: 'a',
+                checkAll: true,
+                checkedCities: ['上海', '北京'],
+                cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+                isIndeterminate: true
+              },
+            ],
+            bianma: '1111',
+            shangji: '',
+            lianjie: '11111111@163.com',
+            kejian: false,
+            qiyong: false,
+            paixu: 'a',
+            checkAll: true,
+            checkedCities: ['上海', '北京'],
+            cities: ['上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳', '上海', '北京', '广州', '深圳'],
+            isIndeterminate: true
+          },
+        ],
+        btnData:[
+          {
+            tubiao:'2',
+            anniu:'新增',
+            bianma:'2',
+            paixu:'1',
+            shuoming:'2387897798989'
+          },
+          {
+            tubiao:'2',
+            anniu:'新增',
+            bianma:'2',
+            paixu:'1',
+            shuoming:'2387897798989'
+          },
+          {
+            tubiao:'2',
+            anniu:'新增',
+            bianma:'2',
+            paixu:'1',
+            shuoming:'2387897798989'
+          },{
+            tubiao:'2',
+            anniu:'新增',
+            bianma:'2',
+            paixu:'1',
+            shuoming:'2387897798989'
+          },{
+            tubiao:'2',
+            anniu:'新增',
+            bianma:'2',
+            paixu:'1',
+            shuoming:'2387897798989'
+          },{
+            tubiao:'2',
+            anniu:'新增',
+            bianma:'2',
+            paixu:'1',
+            shuoming:'2387897798989'
+          },{
+            tubiao:'2',
+            anniu:'新增',
+            bianma:'2',
+            paixu:'1',
+            shuoming:'2387897798989'
+          },{
+            tubiao:'2',
+            anniu:'新增',
+            bianma:'2',
+            paixu:'1',
+            shuoming:'2387897798989'
+          }
+        ]
+      }
+    },
+    methods: {
+      onSubmit: function () {
+        console.log('submit!');
+      },
+      handleCheckAllChange: function (row) {
+        row.checkedCities = event.target.checked ? row.cities : [];
+        row.isIndeterminate = false;
+      },
+      handleCheckedCitiesChange: function (row) {
+        var checkedCount = row.checkedCities.length;
+        row.checkAll = checkedCount === row.cities.length;
+        row.isIndeterminate = checkedCount > 0 && checkedCount < row.cities.length;
+      },
+      submitForm: function (formName) {
+        this.$refs[formName].validate(function (valid) {
+          if (valid) {
+            alert('submit!');
+          } else {
+            console.log('error submit!!');
+            return false;
+          }
+        });
+      }
+    },
+    created: function () {
+
+    }
+  };
+  var Ctor = Vue.extend(Main);
+  new Ctor().$mount('#app');
+</script>
+
+</body>
+</html>

@@ -94,8 +94,57 @@ html, body {
 .week{
   color:red;
 }
+.text-box{
+  p{
+    width: 70px;
+    float: left;
+  }
+  >span{
+    margin-left: 5px;
+    width: 1000px;
+    display: inline-block;
+    img{
+      margin-right: 10px;
+      width: 100%;
+      max-width: 150px;
+    }
+  }
+}
+.text-box-sm{
+  p{
+    width: 70px;
+    float: left;
+  }
+  >span{
+    width: 100%;
+    display: inline-block;
+    img{
+      margin-right: 10px;
+      width: 100%;
+      max-width: 80px;
+    }
+  }
+}
+.sm-img{
+  max-width: 50px !important;
+  max-height: 50px !important;
+}
+.align-center{
+  .el-input__inner{
+    text-align: center;
+  }
+}
+.level{
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #ddd;
+  margin: 5px 0;
+}
+.clear
 
-//改UI
+
+  //改UI
 .el-select-dropdown__item.hover {
   background-color: @blue !important;
 }
@@ -110,6 +159,13 @@ input {
 
 .el-form-item__label{
   vertical-align: top;
+}
+
+.inline-img{
+  .el-upload-list__item{
+    width: 200px;
+    float: left;
+  }
 }
 
 //主页
@@ -218,6 +274,9 @@ input {
     .el-table__body tr.current-row > td {
       background: #d2efff;
     }
+    .el-table th{
+      background: #F5F6FA;
+    }
     .cell {
       word-break: normal;
       padding: 0 5px;
@@ -267,6 +326,7 @@ input {
     }
   }
   .info-module {
+    line-height: 24px;
     font-size: 14px;
     color: @label;
     border-bottom: @border;
@@ -350,7 +410,16 @@ input {
       }
       .detail-info {
         float: left;
+        width: 100%;
         line-height: 24px;
+        .steps{
+          margin-bottom: 20px;
+        }
+        .textarea-lg{
+          .el-textarea__inner{
+            width: 650px;
+          }
+        }
         .input-sm {
           .el-input__inner {
             display: inline-block;
@@ -436,6 +505,8 @@ input {
   }
   .expenditure-module {
     padding-left: 20px;
+    border-left: @border;
+    margin-left: 20px;
     .expenditure-title {
       padding: 0 12px;
       line-height: 32px;
@@ -454,15 +525,12 @@ input {
       }
     }
   }
-
-  .detail-wrapper {
-    margin-top: 15px;
+  .top-border{
     padding-top: 12px;
     border-top: @border;
-    .wrapper-left {
-      border-right: @border;
-      padding-right: 20px;
-    }
+  }
+  .top-margin{
+    margin-top: 15px;
   }
   .no-top {
     margin-top: 0;
@@ -473,5 +541,87 @@ input {
     width: 100%;
     margin-top: 10px;
     text-align: center;
+  }
+  .dialog-box{
+    .el-input{
+      width: auto;
+      .el-input__inner{
+        display: inline-block;
+        width: 220px;
+        margin: 5px auto;
+      }
+    }
+    .detail-info{
+      box-sizing: border-box;
+      padding-left: 15px;
+      p{
+        width: 80px;
+      }
+    }
+    .dialog-btn{
+      overflow: hidden;
+      text-align: right;
+    }
+    .el-dialog__body{
+      padding-bottom: 20px;
+    }
+  }
+  .pingjiaID{
+    padding-left: 20px;
+    margin-bottom: 10px;
+    .pingjia-item{
+      display: inline-block;
+      margin-right: 30px;
+      .el-input{
+        max-width: 150px;
+      }
+      span{
+        color: @label;
+        margin-right: 10px;
+      }
+      .pingjia-id{
+        margin-right: 32px;
+      }
+    }
+    .sm-input{
+      .el-input{
+        width: 50px;
+      }
+    }
+    .md-input{
+      .el-input{
+        width: 100px;
+      }
+    }
+    .zNum{
+      display: inline-block;
+      width: 120px;
+    }
+  }
+  .pingjiaBTN{
+    width: 100%;
+    padding-left: 100px;
+    .btn{
+      width: 100px;
+    }
+  }
+  .lg-dialog{
+    .el-dialog--tiny{
+      width: 800px;
+    }
+  }
+  .reviseForm{
+    .dialog-title{
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 12px;
+    }
+    .el-input{
+      width: 200px;
+    }
+    p{
+      display: inline-block;
+      margin-left: 30px;
+      color: @label;
+    }
   }
 }

@@ -9,15 +9,22 @@
 		}
 
 
-		public function get_user($user_name)
+		public function get_user_by_name($user_name)
 		{
-			$where = ['username' => $user_name, 'status' => 1];
+			$where = ['username' => $user_name];
 			$query = $this->db->get_where('t_user', $where);
 	
 			return $query->row();
 		}
-		
-		
+
+		public function get_user_by_id($user_id)
+		{
+			$where = ['id' => $user_id, 'status' => 1];
+			$query = $this->db->get_where('t_user', $where);
+
+			return $query->row();
+		}
+
 		public function get_usergroup($user_group_id)
 		{
 			

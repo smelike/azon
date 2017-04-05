@@ -207,6 +207,19 @@ class Data_model extends CI_Model
 		$data = $this->db->get($table)->result_array();
 		return $data;
 	}
+		/*
+	*	@查询汇总金额
+	* */
+	public function Statistical($money,$getwhere=array(),$table=''){
+		$table = $table==''?$this->table:$table;
+		if($getwhere){
+			$this->db->select_sum($money);
+			$this->setWhere($getwhere);
+		}
+		
+		$data = $this->db->get($table)->row_array();
+		return $data;
+	}
 }
 
 

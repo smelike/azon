@@ -3,8 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" href="style.css" />
+		<title>Login In Page</title>
 		<style type="text/css">
 		
 			* {margin-left: 5%; margin-right: 5%;}
@@ -20,7 +19,13 @@
 	</head>
 
 	<body>
-		<form action="<?php echo base_url('login')?>" method="post">
+
+		<form action="<?php echo base_url('login/login')?>" method="post">
+			<?php if (isset($arr_error) AND $arr_error) :?>
+				<?php foreach($arr_error as $error):?>
+					<div style="color: red;"><?php echo $error?></div>
+				<?php endforeach;?>
+			<?php endif;?>
 			<table>
 				<caption>
 					<h3><?php echo empty($title)? "Platform User Login" : $title;?></h3>
