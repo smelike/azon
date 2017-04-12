@@ -13,10 +13,10 @@ class Api_Model extends CI_Model
         parent::__construct();
     }
 
-    public function api_query()
+    public function api_query_by_type($type = 2)
     {
-        // $query = $this->db->get_where('t_user_group', $offset, $row_count);
         $this->db->select();
+        $this->db->where('type', $type);
         // status = 0，代表未启用
         $this->db->where('status <>', 0);
         $query = $this->db->get('t_api');

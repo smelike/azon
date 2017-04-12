@@ -2,11 +2,12 @@
 
 	class User extends MY_Controller
 	{
-		private $_row_count = 10;
+
 		public function __construct()
 		{
 			parent::__construct();
 			$this->load->model('User_Model');
+			$this->is_login();
 		}
 
 
@@ -23,12 +24,6 @@
 			$page_size = $this->input->post('size');
 			$size = $page_size ? $page_size : 10;
 			$total = $this->User_Model->user_count();
-			/*
-			$arr_data = [
-					'total' => $this->User_Model->user_count(),
-					'size' => $size,
-					'users' => $users
-			];*/
 
 			$this->echo_json($users, compact('total', 'size', 'users'));
 		}
@@ -60,17 +55,25 @@
 		public function user_search()
 		{
 			$type = intval(post_param('type'));
-			$users = $this->User_Model->search_user_by_similar_value(request_param('keyword'));
+			$keyword = request_param('keyword');
 
-			if ($type) {
-				$search_result = $users;
-				$users = [];
-				foreach($search_result as $user) {
-					if ($user->type == $type) {
-						$users[] = $user;
+			$users = [];
+			if ($keyword) {
+				$users = $this->User_Model->search_user_by_similar_value($keyword);
+
+				if ($type) {
+					$search_result = $users;
+					$users = [];
+					foreach($search_result as $user) {
+						if ($user->type == $type) {
+							$users[] = $user;
+						}
 					}
 				}
+			} else if (empty($keyword) AND $type) {
+				$users = $this->User_Model->search_user_by_type($type);
 			}
+
 			$total = count($users);
 
 			$this->echo_json($users, compact('total', 'users'));

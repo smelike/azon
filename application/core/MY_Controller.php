@@ -3,7 +3,7 @@
 
 	class MY_Controller extends CI_Controller
 	{
-
+		public $_row_count = 10;
 		public function __construct()
 		{
 			parent::__construct();

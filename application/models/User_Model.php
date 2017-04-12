@@ -16,9 +16,11 @@ class User_Model extends CI_Model
 
     public function user_query($offset, $row_count)
     {
-
+        $type = request_param('type');
         $this->db->select();
+
         $this->db->where('status <>', 3);
+        $type ? $this->db->where('type', $type) : '';
         $this->db->limit($row_count, $offset);
         $query = $this->db->get('t_user');
 
@@ -27,17 +29,18 @@ class User_Model extends CI_Model
 
     public function user_count()
     {
+        $type = request_param('type');
         $this->db->where('status <>', 3);
+        $type ? $this->db->where('type', $type) : '';
         $this->db->from('t_user');
         $total = $this->db->count_all_results();
-
-        echo $this->db->last_query();
 
         return $total;
     }
 
     public function update_uer()
     {
+
         $data = array(
             'username' => $this->input->post('username'),
             'real_name' => $this->input->post('real_name'),
@@ -84,7 +87,20 @@ class User_Model extends CI_Model
             $this->db->or_like('mobile', $searchValue, 'both');
 
             $query = $this->db->get('t_user');
-            // echo $this->db->last_query();
+
+            return $query->result();
+        }
+    }
+
+    public function search_user_by_type($type)
+    {
+        if ($type) {
+
+            $this->db->where('type', $type);
+            $this->db->where('status <>', 3);
+
+            $query = $this->db->get('t_user');
+
             return $query->result();
         }
     }
